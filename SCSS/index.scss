@@ -1,0 +1,102 @@
+//TEXTOS
+$color1 : #fff;
+$color2: #000;
+$color3: #CCCCCC;
+$color4: #001f3f
+;
+
+body{
+    background-color: black;
+}
+
+.header{
+    display: flex;
+
+    &__img{
+        width: 170px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+.drawLogin{
+    width: 300px;
+    margin: - auto;
+}
+
+.welcome{
+    margin: 0 auto;
+
+    &_textOne{
+        font-family: "Josefin Slab";
+        font-weight: lighter;
+        color: $color1;
+        text-align: center;
+        font-size: 20pt;
+
+    }
+
+    &_textTwo{
+        font-family: "Josefin Slab";
+        font-weight: bold;
+        color: $color1;
+        text-align: center;
+        font-size: 17pt;
+    }
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+
+    &_Continue{
+        color: $color1;
+        background-color: $color4;
+        text-align: center;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    &_Continue:hover{
+        background-color: $color3;
+        color: $color4;
+    }
+
+    &_or{
+        color: $color1;
+        text-align: center;
+    }
+
+    &_Create{
+        background-color: $color4;
+        text-align: center;
+        color: $color1;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    &_Create:hover{
+        background-color: $color3;
+        color: $color4;
+    }
+}
+
+input{
+    background-color: $color3;
+    color: $color2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    list-style: none;
+}
+
+input:focus{
+    background-color: $color4;
+    color: $color1;
+}
+
+#passwordInput{
+    padding: 10px;
+    margin-top: 20px;
+}
