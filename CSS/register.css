@@ -1,0 +1,89 @@
+body {
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  display: flex;
+}
+.header__img {
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.welcome {
+  text-align: center;
+}
+.welcome_textOne {
+  color: #cccccc;
+  font-size: 20pt;
+}
+.welcome_textTwo {
+  color: #fff;
+  font-size: 23pt;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+  gap: 5%;
+  align-items: center; /* Centra verticalmente */
+}
+.form_create {
+  grid-column: 1/span 2; /* Ocupa las dos columnas */
+  color: #fff;
+  background-color: #001f3f;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.form_create:hover {
+  background-color: #fff;
+  color: #001f3f;
+}
+.form_or {
+  grid-column: 1/span 1; /* Ocupa las dos columnas */
+  color: #cccccc;
+  text-align: center;
+}
+.form_logIn {
+  grid-column: 1/3; /* Coloca "Log In" en la segunda columna */
+  background-color: #001f3f;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 20px; /* Agregado para separar del elemento anterior */
+}
+.form_logIn:hover {
+  background-color: #fff;
+  color: #001f3f;
+}
+
+#form_email {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+
+input {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: #cccccc;
+  color: #000;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+input:focus {
+  background-color: #001f3f;
+  color: #fff;
+}
+
+/*# sourceMappingURL=register.css.map */

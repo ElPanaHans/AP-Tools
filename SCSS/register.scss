@@ -1,0 +1,104 @@
+//TEXTOS
+$color1: #fff;
+$color2: #000;
+$color3: #cccccc;
+$color4: #001f3f;
+$color5: #696969;
+
+body {
+  background-color: $color2;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  display: flex;
+
+  &__img {
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+}
+
+.welcome {
+  text-align: center;
+
+  &_textOne {
+    color: $color3;
+    font-size: 20pt;
+  }
+
+  &_textTwo {
+    color: $color1;
+    font-size: 23pt;
+  }
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 5%;
+    align-items: center; /* Centra verticalmente */
+  
+    &_create {
+      grid-column: 1 / span 2; /* Ocupa las dos columnas */
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+  
+    &_create:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+  
+    &_or {
+    grid-column: 1 / span 1; /* Ocupa las dos columnas */
+    color: $color3;
+    text-align: center;
+    }
+  
+    &_logIn {
+      grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
+      background-color: $color4;
+      text-align: center;
+      color: $color1;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 20px; /* Agregado para separar del elemento anterior */
+    }
+
+    &_logIn:hover {
+        background-color: $color1;
+        color: $color4;
+      }
+  }
+  
+
+
+#form_email {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+
+input {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: $color3;
+  color: $color2;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+input:focus {
+  background-color: $color4;
+  color: $color1;
+}

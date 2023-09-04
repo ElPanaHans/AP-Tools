@@ -1,5 +1,6 @@
 body {
-  background-color: black;
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
 }
 
 .header {
@@ -73,7 +74,7 @@ input {
   padding: 10px;
   text-align: center;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: bolder;
   list-style: none;
 }
 

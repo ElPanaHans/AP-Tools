@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="600px, initial-scale=1.0">
+    <title>AP Tools register</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <link rel="shortcut icon" href="../IMGS/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,400&family=Josefin+Slab:wght@100;400&display=swap" rel="stylesheet">
+    <script src="../JS/app.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <img src="../IMGS/logoT.png" alt="Logo AP-Tools" class="header__img">
+    </header>
+
+    <section class="welcome">
+        <p class="welcome_textOne">Hi There!</p>
+        <p class="welcome_textTwo">Let's Get Started</p>
+    </section>
+
+    <section class="form">
+        <input type="text" class="form_fname" placeholder="First name" required>
+        <input type="text" class="form_lname" placeholder="Last name" required>
+        <input type="email" name="email" id="form_email" placeholder="Email" required>
+        <input type="date" id="form_date" name="date_form" min="2005-01-01" required/>
+        <input type="tel" name="tel" id="form_tel" placeholder="Phone number" required>
+        <input type="password" name="pass" id="form_pass" placeholder="Password" required>
+        <input type="text" name="pass2" id="form_passConfirm" placeholder="Confirm Password" required>
+        <button type="submit" class="form_create">Create an Account ></button>
+        <p class="form_or">.... Or ....</p>
+        <a href="../HTML/index.html"><p class="form_logIn">Log In</p></a>
+    </section>
+</body>
+</html>
