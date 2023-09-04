@@ -21,7 +21,8 @@ body{
 
 .drawLogin{
     width: 300px;
-    margin: - auto;
+    display: block;
+    margin: auto;
 }
 
 .welcome{
@@ -55,15 +56,16 @@ body{
         text-align: center;
         padding: 15px;
         border-radius: 15px;
+        margin-top: 20px;
     }
 
     &_Continue:hover{
-        background-color: $color3;
+        background-color: $color1;
         color: $color4;
     }
 
     &_or{
-        color: $color1;
+        color: $color3;
         text-align: center;
     }
 
@@ -76,7 +78,7 @@ body{
     }
 
     &_Create:hover{
-        background-color: $color3;
+        background-color: $color1;
         color: $color4;
     }
 }

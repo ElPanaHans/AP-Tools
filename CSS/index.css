@@ -13,7 +13,8 @@ body {
 
 .drawLogin {
   width: 300px;
-  margin: -auto;
+  display: block;
+  margin: auto;
 }
 
 .welcome {
@@ -44,13 +45,14 @@ body {
   text-align: center;
   padding: 15px;
   border-radius: 15px;
+  margin-top: 20px;
 }
 .login_Continue:hover {
-  background-color: #CCCCCC;
+  background-color: #fff;
   color: #001f3f;
 }
 .login_or {
-  color: #fff;
+  color: #CCCCCC;
   text-align: center;
 }
 .login_Create {
@@ -61,7 +63,7 @@ body {
   border-radius: 15px;
 }
 .login_Create:hover {
-  background-color: #CCCCCC;
+  background-color: #fff;
   color: #001f3f;
 }
 
