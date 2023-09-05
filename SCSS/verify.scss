@@ -1,0 +1,80 @@
+//TEXTOS
+$color1: #fff;
+$color2: #000;
+$color3: #cccccc;
+$color4: #001f3f;
+
+body {
+  background-color: $color2;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  display: flex;
+
+  &__img {
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+}
+
+.text {
+  &_One {
+    text-align: center;
+    color: $color3;
+    font-size: 15pt;
+    font-weight: lighter;
+  }
+}
+
+.image {
+  text-align: center;
+  &_fa-id {
+    color: $color1;
+    display: block;
+    text-align: center;
+    font-size: 130pt;
+  }
+}
+
+.input{
+    &_container {
+        text-align: center;
+        margin: 20px auto; /* Ajusta el margen según sea necesario */
+      }
+
+      &_input {
+        display: none; /* Oculta el input real */
+      }
+
+      &_label {
+        background-color: $color3;
+        color: $color4;
+        padding: 10px 20px;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      
+      &_label:hover {
+        background-color: $color1;
+        color: $color4;
+        border: 2px solid $color4;
+      }
+
+      &_continue{
+        background-color: $color4;
+        color: $color1;
+        display: block;
+        text-align: center;
+        margin: 20px auto; /* Ajusta el margen según sea necesario */
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      &_continue:hover{
+        background-color: $color1;
+        color: $color4;
+      }
+}
+

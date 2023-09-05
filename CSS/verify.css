@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body {
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  display: flex;
+}
+.header__img {
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.text_One {
+  text-align: center;
+  color: #cccccc;
+  font-size: 15pt;
+  font-weight: lighter;
+}
+
+.image {
+  text-align: center;
+}
+.image_fa-id {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 130pt;
+}
+
+.input_container {
+  text-align: center;
+  margin: 20px auto; /* Ajusta el margen según sea necesario */
+}
+.input_input {
+  display: none; /* Oculta el input real */
+}
+.input_label {
+  background-color: #cccccc;
+  color: #001f3f;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.input_label:hover {
+  background-color: #fff;
+  color: #001f3f;
+  border: 2px solid #001f3f;
+}
+.input_continue {
+  background-color: #001f3f;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto; /* Ajusta el margen según sea necesario */
+  padding: 20px;
+  border-radius: 15px;
+}
+.input_continue:hover {
+  background-color: #fff;
+  color: #001f3f;
+}
+
+/*# sourceMappingURL=verify.css.map */
