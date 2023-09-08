@@ -30,16 +30,20 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
   gap: 5%;
-  align-items: center; /* Centra verticalmente */
+  justify-content: space-between;
 }
 .form_create {
-  grid-column: 1/span 2; /* Ocupa las dos columnas */
   color: #fff;
   background-color: #001f3f;
   text-align: center;
-  padding: 15px;
+  padding: 20px 40px;
   border-radius: 15px;
   margin-top: 20px;
+  border-color: transparent;
+}
+.form_a {
+  grid-column: 1/span 2; /* Ocupa las dos columnas */
+  text-align: center;
 }
 .form_create:hover {
   background-color: #fff;
@@ -52,15 +56,19 @@ body {
 }
 .form_logIn {
   grid-column: 1/3; /* Coloca "Log In" en la segunda columna */
-  background-color: #001f3f;
+  background-color: #fff;
   text-align: center;
-  color: #fff;
+  color: #000;
   padding: 15px;
   border-radius: 15px;
-  margin-top: 20px; /* Agregado para separar del elemento anterior */
+  margin-top: 5px;
+  font-weight: bolder;
+}
+.form a {
+  text-decoration: none;
 }
 .form_logIn:hover {
-  background-color: #fff;
+  background-color: #cccccc;
   color: #001f3f;
 }
 
@@ -69,10 +77,12 @@ body {
   grid-column-start: 1;
   grid-row-end: 3;
   grid-column-end: 3;
+  margin: auto;
+  width: 90%;
 }
 
 input {
-  width: 100%;
+  width: 95%;
   padding: 15px 0px;
   background-color: #cccccc;
   color: #000;
@@ -84,6 +94,7 @@ input {
 input:focus {
   background-color: #001f3f;
   color: #fff;
+  border-color: transparent;
 }
 
 /*# sourceMappingURL=register.css.map */

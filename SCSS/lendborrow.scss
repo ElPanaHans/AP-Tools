@@ -1,0 +1,112 @@
+//TEXTOS
+$color1: #fff;
+$color2: #000;
+$color3: #cccccc;
+$color4: #001f3f;
+
+body {
+  background-color: $color2;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  &_fa-solid {
+    color: $color1;
+    font-size: 20pt;
+    margin: 10px 45px 0px 10px;
+  }
+  &__img {
+    width: 170px;
+    padding-top: 10px;
+  }
+}
+
+.options {
+  margin: 50px auto;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 170px;
+  justify-content: center;
+  display: flex;
+  &_lend {
+    color: $color3;
+    padding: 15px 30px 15px 30px;
+    background-color: $color4;
+    border-radius: 10px;
+  }
+
+  &_borrow {
+    color: $color2;
+    padding: 15px 30px 15px 30px;
+    background-color: $color3;
+    border-radius: 10px;
+  }
+}
+
+.options2 {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  input {
+    padding: 13px;
+    width: 45%;
+    height: auto;
+    border-radius: 15px;
+    background-color: $color3;
+    font-size: 10pt;
+    text-align: center;
+  }
+}
+
+.iframe_map{
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.range{
+  text-align: center;
+  accent-color: $color3;
+  font-size: 17pt;
+  &_numbers{
+    display: flex;
+    justify-content: space-between;
+    color: $color3;
+    font-size: 13pt;
+  }
+}
+
+.btn{
+  margin-top: 50px;
+  text-align: center;
+  &_btn{
+    background-color: $color3;
+    color: $color2;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: lighter;
+  }
+
+  &_btn:hover{
+    background-color: $color1;
+    color: $color4;
+  }
+}
+
+.footer {
+  &_copy {
+    color: $color1;
+    text-align: center;
+    background-color: $color4;
+    padding: 10px;
+    font-family: monospace;
+  }
+}

@@ -1,0 +1,102 @@
+body {
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.header_fa-solid {
+  color: #fff;
+  font-size: 20pt;
+  margin: 10px 45px 0px 10px;
+}
+.header__img {
+  width: 170px;
+  padding-top: 10px;
+}
+
+.options {
+  margin: 50px auto;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 170px;
+  justify-content: center;
+  display: flex;
+}
+.options_lend {
+  color: #cccccc;
+  padding: 15px 30px 15px 30px;
+  background-color: #001f3f;
+  border-radius: 10px;
+}
+.options_borrow {
+  color: #000;
+  padding: 15px 30px 15px 30px;
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.options2 {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.options2 input {
+  padding: 13px;
+  width: 45%;
+  height: auto;
+  border-radius: 15px;
+  background-color: #cccccc;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.iframe_map {
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.range {
+  text-align: center;
+  accent-color: #cccccc;
+  font-size: 17pt;
+}
+.range_numbers {
+  display: flex;
+  justify-content: space-between;
+  color: #cccccc;
+  font-size: 13pt;
+}
+
+.btn {
+  margin-top: 50px;
+  text-align: center;
+}
+.btn_btn {
+  background-color: #cccccc;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: lighter;
+}
+.btn_btn:hover {
+  background-color: #fff;
+  color: #001f3f;
+}
+
+.footer_copy {
+  color: #fff;
+  text-align: center;
+  background-color: #001f3f;
+  padding: 10px;
+  font-family: monospace;
+}
+
+/*# sourceMappingURL=lendborrow.css.map */

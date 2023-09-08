@@ -23,14 +23,14 @@ body {
   &_One {
     text-align: center;
     color: $color3;
-    font-size: 15pt;
+    font-size: 18pt;
     font-weight: lighter;
   }
 }
 
 .image {
   text-align: center;
-  &_fa-id {
+  &_image {
     color: $color1;
     display: block;
     text-align: center;
@@ -38,43 +38,53 @@ body {
   }
 }
 
-.input{
-    &_container {
-        text-align: center;
-        margin: 20px auto; /* Ajusta el margen según sea necesario */
-      }
+.input {
+  &_container {
+    text-align: center;
+    margin: 50px auto;
+  }
 
-      &_input {
-        display: none; /* Oculta el input real */
-      }
+  &_input {
+    display: none;
+  }
 
-      &_label {
-        background-color: $color3;
-        color: $color4;
-        padding: 10px 20px;
-        border-radius: 15px;
-        cursor: pointer;
-      }
-      
-      &_label:hover {
-        background-color: $color1;
-        color: $color4;
-        border: 2px solid $color4;
-      }
+  &_label {
+    background-color: $color3;
+    color: $color4;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-      &_continue{
-        background-color: $color4;
-        color: $color1;
-        display: block;
-        text-align: center;
-        margin: 20px auto; /* Ajusta el margen según sea necesario */
-        padding: 20px;
-        border-radius: 15px;
-      }
+  &_label:hover {
+    background-color: $color1;
+    color: $color4;
+    border: 2px solid $color4;
+  }
 
-      &_continue:hover{
-        background-color: $color1;
-        color: $color4;
-      }
+  &_continue {
+    background-color: $color4;
+    color: $color1;
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border-color: transparent;
+  }
+
+  &_continue:hover {
+    background-color: $color1;
+    color: $color4;
+  }
 }
 
+.footer {
+  &_copy {
+    color: $color1;
+    text-align: center;
+    background-color: $color4;
+    padding: 10px;
+    font-family: monospace;
+  }
+}
