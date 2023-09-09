@@ -17,7 +17,6 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,400&family=Josefin+Slab:wght@100;400&display=swap"
       rel="stylesheet"
     />
-    <script src="../JS/map.js"></script>
   </head>
   <body>
     <header class="header">
@@ -30,40 +29,112 @@
       <p class="options_borrow">Borrow</p>
     </section>
 
-    <div class="options2">
-      <input
-        type="text"
-        name="text"
-        id="looking"
-        placeholder="What are you looking?"
-      />
-      <input
-        type="number"
-        id="days"
-        class="options2_days"
-        min="1"
-        max="15"
-        placeholder="1 - 15days"
-      />
-    </div>
-
-    <iframe class="iframe_map" width="160" height="180" frameborder="0" style="border: 0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1666566844833!2d-84.10116470000002!3d9.969788100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e4d26a26e827%3A0xaab23a5179156d9c!2sSanto%20Domingo%20Technical%20college!5e0!3m2!1sen!2sus!4v1630622210379!5m2!1sen!2sus" allowfullscreen="" loading="lazy"
-    ></iframe>
-
-    <div class="range">
-      <input type="range" name="range" id="range_range">
-      <div class="range_numbers">
-        <p class="range_textOne">100m</p>
-        <p class="range_textTwo">500m</p>
+    <section class="borrow" id="borrow-option">
+      <div class="options2">
+        <input
+          type="text"
+          name="text"
+          id="looking"
+          placeholder="What are you looking?"
+        />
+        <input
+          type="number"
+          id="days"
+          class="options2_days"
+          min="1"
+          max="15"
+          placeholder="1 - 15days"
+        />
       </div>
-    </div>
 
-    <div class="btn">
-      <button class="btn_btn" type="submit">Borrow</button>
-    </div>
+      <iframe
+        class="iframe_map"
+        width="160"
+        height="180"
+        style="border: 0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.1666566844833!2d-84.10116470000002!3d9.969788100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e4d26a26e827%3A0xaab23a5179156d9c!2sSanto%20Domingo%20Technical%20college!5e0!3m2!1sen!2sus!4v1630622210379!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+
+      <div class="range">
+        <input type="range" name="range" id="range_range" />
+        <div class="range_numbers">
+          <p class="range_textOne">100m</p>
+          <p class="range_textTwo">500m</p>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button class="btn_btn" type="submit">Borrow</button>
+      </div>
+    </section>
+
+    <section class="lend" id="lend-option">
+      <div class="contenedor">
+        <div class="contenedor-1">
+          <div class="contenedor-1_seccion1">
+            <p class="item">Item</p>
+            <p class="item2">Hummer</p>
+            <img
+              src="../IMGS/perfiles/perfil1.jpg"
+              alt="Foto de perfil"
+              class="contenedor-1_img"
+              width="30px"
+              height="30px"
+            />
+          </div>
+
+          <div class="contenedor-1_seccion2">
+            <p class="time">Time</p>
+            <p class="days">3 days</p>
+          </div>
+
+          <div class="contenedor-1_seccion3">
+            <p class="name">Name</p>
+            <p>Roberto Salazar</p>
+          </div>
+
+          <div class="contenedor-1_seccion4">
+            <button id="Deny1">Deny</button>
+            <button id="Accept1">Accept</button>
+          </div>
+        </div>
+
+        <div class="contenedor-2">
+          <div class="contenedor-2_seccion1">
+            <p class="item">Item</p>
+            <p class="item2">Screwdriver</p>
+            <img
+              src="../IMGS/perfiles/perfil2.jpg"
+              alt="Foto de perfil"
+              class="contenedor-2_img"
+              width="30px"
+              height="30px"
+            />
+          </div>
+
+          <div class="contenedor-2_seccion2">
+            <p class="time">Time</p>
+            <p class="days">5 days</p>
+          </div>
+
+          <div class="contenedor-2_seccion3">
+            <p class="name">Name</p>
+            <p>Maria del Socorro</p>
+          </div>
+
+          <div class="contenedor-2_seccion4">
+            <button id="Deny2">Deny</button>
+            <button id="Accept2">Accept</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <p class="footer_copy">AP-Tools &copy;2023</p>
     </footer>
   </body>
 </html>
+<script src="../JS/change.js"></script>

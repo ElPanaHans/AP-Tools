@@ -22,11 +22,11 @@ body {
 .image {
   text-align: center;
 }
-.image_image {
+.image_img {
   color: #fff;
   display: block;
   text-align: center;
-  font-size: 130pt;
+  font-size: 150pt;
 }
 
 .input_container {

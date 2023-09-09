@@ -3,23 +3,26 @@ $color1: #fff;
 $color2: #000;
 $color3: #cccccc;
 $color4: #001f3f;
+$color5: #ff0000;
+$color6: #008000;
 
 body {
   background-color: $color2;
   font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
 }
-
+//Seccion Borrow
 .header {
+  margin-top: 30px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 
   &_fa-solid {
     color: $color1;
     font-size: 20pt;
-    margin: 10px 45px 0px 10px;
+    margin: 0px 20px 0px 1px;
   }
-  &__img {
+  &_img {
     width: 170px;
     padding-top: 10px;
   }
@@ -65,18 +68,18 @@ body {
   }
 }
 
-.iframe_map{
+.iframe_map {
   border-radius: 20px;
   display: block;
   margin: auto;
   margin-top: 20px;
 }
 
-.range{
+.range {
   text-align: center;
   accent-color: $color3;
   font-size: 17pt;
-  &_numbers{
+  &_numbers {
     display: flex;
     justify-content: space-between;
     color: $color3;
@@ -84,10 +87,10 @@ body {
   }
 }
 
-.btn{
+.btn {
   margin-top: 50px;
   text-align: center;
-  &_btn{
+  &_btn {
     background-color: $color3;
     color: $color2;
     padding: 15px 30px;
@@ -95,7 +98,7 @@ body {
     font-weight: lighter;
   }
 
-  &_btn:hover{
+  &_btn:hover {
     background-color: $color1;
     color: $color4;
   }
@@ -108,5 +111,191 @@ body {
     background-color: $color4;
     padding: 10px;
     font-family: monospace;
+  }
+}
+
+//Seccion Lend
+
+#lend-option{
+  display: none;
+}
+.contenedor {
+      &-1 {
+        width: 80%;
+        margin: auto;
+        border-radius: 15px;
+        background-color: $color1;
+        padding-bottom: 20px;
+        &_seccion1 {
+          text-align: center;
+          display: flex;
+          color: $color2;
+
+          img {
+            margin-top: 10px;
+            border-radius: 50%;
+          }
+
+          .item {
+            font-weight: bold;
+            padding-left: 35px;
+          }
+
+          .item2 {
+            padding-left: 60px;
+            padding-right: 30px;
+          }
+        }
+
+        &_seccion2 {
+          text-align: center;
+          display: flex;
+          color: $color2;
+          justify-content: space-around;
+
+          .time {
+            padding-left: 5px;
+            font-weight: bold;
+          }
+
+          .days {
+            padding-right: 60px;
+          }
+        }
+
+        &_seccion3 {
+          display: flex;
+          color: $color2;
+          justify-content: space-around;
+
+          .name {
+            font-weight: bold;
+            padding-left: 15px;
+          }
+        }
+
+        &_seccion4 {
+          justify-content: center;
+          gap: 20px;
+          text-align: center;
+          display: flex;
+          color: $color2;
+
+          #Deny1{
+            text-align: center;
+            padding: 15px 30px;
+            background-color: $color5;
+            color: $color3;
+            border-color: transparent;
+          }
+
+          #Deny1:hover{
+            background-color: $color2;
+            color: $color1;
+          }
+
+          #Accept1{
+            text-align: center;
+            padding: 15px 30px;
+            background-color: $color6;
+            color: $color3;
+            border-color: transparent;
+          }
+
+          #Accept1:hover{
+            background-color: $color2;
+            color: $color1;
+          }
+        }
+      }
+    
+
+  &-2 {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 15px;
+    background-color: $color1;
+    padding-bottom: 20px;
+    &_seccion1 {
+      text-align: center;
+      display: flex;
+      color: $color2;
+
+      img {
+        margin-top: 10px;
+        border-radius: 50%;
+        margin-left: -10px;
+      }
+
+      .item {
+        font-weight: bold;
+        padding-left: 35px;
+      }
+
+      .item2 {
+        padding-left: 60px;
+        padding-right: 30px;
+      }
+    }
+
+    &_seccion2 {
+      text-align: center;
+      display: flex;
+      color: $color2;
+      justify-content: space-around;
+
+      .time {
+        padding-left: 5px;
+        font-weight: bold;
+      }
+
+      .days {
+        padding-right: 60px;
+      }
+    }
+
+    &_seccion3 {
+      display: flex;
+      color: $color2;
+      justify-content: space-around;
+
+      .name {
+        font-weight: bold;
+        padding-left: 15px;
+      }
+    }
+
+    &_seccion4 {
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      display: flex;
+      color: $color2;
+
+      #Deny2 {
+        text-align: center;
+        padding: 15px 30px;
+        background-color: $color5;
+        color: $color3;
+        border-color: transparent;
+      }
+
+      #Deny2:hover {
+        background-color: $color2;
+      }
+
+      #Accept2 {
+        text-align: center;
+        padding: 15px 30px;
+        background-color: $color6;
+        color: $color3;
+        border-color: transparent;
+      }
+
+      #Accept2:hover {
+        background-color: $color2;
+        color: $color1;
+      }
+    }
   }
 }
