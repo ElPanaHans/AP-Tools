@@ -39,11 +39,11 @@ body {
 .informations {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 .informations .antiguity {
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 .informations .antiguity_text {
   color: #fff;
@@ -53,28 +53,42 @@ body {
   color: #fff;
   font-size: 15pt;
 }
-.informations .stars {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
 .informations .stars_i {
-  color: #fff;
-  text-align: center;
-  display: flex;
+  margin-top: 40px;
+  color: #ffff00;
+  font-size: 15pt;
+  flex-direction: column;
+}
+.informations .stars_i_fa-stars {
+  justify-content: center;
 }
 
-.stars_pa {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
 .stars_pa-p {
   color: #fff;
+  font-size: 20pt;
+}
+
+.com-s {
+  display: flex;
+  margin-bottom: 20px;
+}
+.com_photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-top: 30px;
+  display: flex;
+}
+.com_section_name {
+  color: #3a76b5;
+  margin-left: 30px;
+  font-size: 13pt;
+}
+.com_section_com {
+  color: #cccccc;
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=information.css.map */

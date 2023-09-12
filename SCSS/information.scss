@@ -5,6 +5,8 @@ $color3: #cccccc;
 $color4: #001f3f;
 $color5: #ff0000;
 $color6: #008000;
+$color7: #ffff00;
+$color8: #3a76b5;
 
 body {
   background-color: $color2;
@@ -48,10 +50,10 @@ body {
 .informations{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    text-align: center;
     .antiguity{
         text-align: center;
-        display: flex;
-        flex-direction: column;
 
         &_text{
             color: $color1;
@@ -65,27 +67,54 @@ body {
     }
 
     .stars{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-
+        
         &_i{
-            color: $color1;
-            text-align: center;
-            display: flex;
+            margin-top: 40px;
+            color: $color7;
+            font-size: 15pt;
+            flex-direction: column;
         }
+        &_i_fa-stars{
+            justify-content: center;
+        }
+
     }
 }
 
 .stars_pa{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     &-p{
         color: $color1;
+        font-size: 20pt;
     }
+}
+
+
+.com{
+&-s{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+&_photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+}
+
+&_section{
+    &_name{
+        color: $color8;
+        margin-left: 30px;
+        font-size: 13pt;
+    }
+
+    &_com{
+        color: $color3;
+        margin-left: 30px;
+    }
+}
 }
