@@ -1,0 +1,80 @@
+body {
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.header_fa-chevron {
+  color: #fff;
+  font-size: 25pt;
+}
+.header_h2 {
+  color: #fff;
+  font-size: 30pt;
+  margin-right: 30px;
+}
+
+.image {
+  text-align: center;
+}
+.image_img {
+  width: 60%;
+}
+
+.name {
+  text-align: center;
+}
+.name_name {
+  font-size: 25pt;
+  color: #fff;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-around;
+}
+.informations .antiguity {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.informations .antiguity_text {
+  color: #fff;
+  font-size: 20pt;
+}
+.informations .antiguity_time {
+  color: #fff;
+  font-size: 15pt;
+}
+.informations .stars {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.informations .stars_i {
+  color: #fff;
+  text-align: center;
+  display: flex;
+}
+
+.stars_pa {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.stars_pa-p {
+  color: #fff;
+}
+
+/*# sourceMappingURL=information.css.map */

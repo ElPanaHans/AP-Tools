@@ -1,0 +1,91 @@
+//TEXTOS
+$color1: #fff;
+$color2: #000;
+$color3: #cccccc;
+$color4: #001f3f;
+$color5: #ff0000;
+$color6: #008000;
+
+body {
+  background-color: $color2;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    &_fa-chevron{
+        color: $color1;
+        font-size:25pt;
+    }
+
+    &_h2{
+        color: $color1;
+        font-size: 30pt;
+        margin-right:30px ;
+    }
+}
+
+.image{
+    text-align: center;
+    &_img{
+        width: 60%;
+    }
+}
+
+.name{
+    text-align: center;
+    &_name{
+        font-size: 25pt;
+        color: $color1;
+    }
+}
+
+.informations{
+    display: flex;
+    justify-content: space-around;
+    .antiguity{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        &_text{
+            color: $color1;
+            font-size: 20pt;
+        }
+
+        &_time{
+            color: $color1;
+            font-size: 15pt;
+        }
+    }
+
+    .stars{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        &_i{
+            color: $color1;
+            text-align: center;
+            display: flex;
+        }
+    }
+}
+
+.stars_pa{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &-p{
+        color: $color1;
+    }
+}

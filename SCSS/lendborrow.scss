@@ -57,6 +57,13 @@ body {
   display: flex;
   justify-content: center;
 
+  :focus{
+    background-color: $color4;
+    color: $color1;
+    border-color: transparent;
+    text-decoration: none;
+  }
+
   input {
     padding: 13px;
     width: 45%;
@@ -96,6 +103,7 @@ body {
     padding: 15px 30px;
     border-radius: 15px;
     font-weight: lighter;
+    transition: background-color 0.3s, color 0.3s;
   }
 
   &_btn:hover {
@@ -116,101 +124,108 @@ body {
 
 //Seccion Lend
 
-#lend-option{
+#lend-option {
   display: none;
+  .hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
 .contenedor {
-      &-1 {
-        width: 80%;
-        margin: auto;
-        border-radius: 15px;
-        background-color: $color1;
-        padding-bottom: 20px;
-        &_seccion1 {
-          text-align: center;
-          display: flex;
-          color: $color2;
+  &-1 {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: $color1;
+    padding-bottom: 20px;
+    &_seccion1 {
+      text-align: center;
+      display: flex;
+      color: $color2;
 
-          img {
-            margin-top: 10px;
-            border-radius: 50%;
-          }
-
-          .item {
-            font-weight: bold;
-            padding-left: 35px;
-          }
-
-          .item2 {
-            padding-left: 60px;
-            padding-right: 30px;
-          }
-        }
-
-        &_seccion2 {
-          text-align: center;
-          display: flex;
-          color: $color2;
-          justify-content: space-around;
-
-          .time {
-            padding-left: 5px;
-            font-weight: bold;
-          }
-
-          .days {
-            padding-right: 60px;
-          }
-        }
-
-        &_seccion3 {
-          display: flex;
-          color: $color2;
-          justify-content: space-around;
-
-          .name {
-            font-weight: bold;
-            padding-left: 15px;
-          }
-        }
-
-        &_seccion4 {
-          justify-content: center;
-          gap: 20px;
-          text-align: center;
-          display: flex;
-          color: $color2;
-
-          #Deny1{
-            text-align: center;
-            padding: 15px 30px;
-            background-color: $color5;
-            color: $color3;
-            border-color: transparent;
-          }
-
-          #Deny1:hover{
-            background-color: $color2;
-            color: $color1;
-          }
-
-          #Accept1{
-            text-align: center;
-            padding: 15px 30px;
-            background-color: $color6;
-            color: $color3;
-            border-color: transparent;
-          }
-
-          #Accept1:hover{
-            background-color: $color2;
-            color: $color1;
-          }
-        }
+      img {
+        margin-top: 10px;
+        border-radius: 50%;
       }
-    
+
+      .item {
+        font-weight: bold;
+        padding-left: 35px;
+      }
+
+      .item2 {
+        padding-left: 60px;
+        padding-right: 30px;
+      }
+    }
+
+    &_seccion2 {
+      text-align: center;
+      display: flex;
+      color: $color2;
+      justify-content: space-around;
+
+      .time {
+        padding-left: 5px;
+        font-weight: bold;
+      }
+
+      .days {
+        padding-right: 60px;
+      }
+    }
+
+    &_seccion3 {
+      display: flex;
+      color: $color2;
+      justify-content: space-around;
+
+      .name {
+        font-weight: bold;
+        padding-left: 15px;
+      }
+    }
+
+    &_seccion4 {
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      display: flex;
+      color: $color2;
+
+      #Deny1 {
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+        padding: 15px 30px;
+        background-color: $color5;
+        color: $color3;
+        border-color: transparent;
+      }
+
+      #Deny1:hover {
+        background-color: $color2;
+        color: $color1;
+      }
+
+      #Accept1 {
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+        padding: 15px 30px;
+        background-color: $color6;
+        color: $color3;
+        border-color: transparent;
+      }
+
+      #Accept1:hover {
+        background-color: $color2;
+        color: $color1;
+      }
+    }
+  }
 
   &-2 {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     width: 80%;
     margin: 30px auto;
     border-radius: 15px;
@@ -273,6 +288,7 @@ body {
       color: $color2;
 
       #Deny2 {
+        transition: background-color 0.3s, color 0.3s;
         text-align: center;
         padding: 15px 30px;
         background-color: $color5;
@@ -285,6 +301,7 @@ body {
       }
 
       #Accept2 {
+        transition: background-color 0.3s, color 0.3s;
         text-align: center;
         padding: 15px 30px;
         background-color: $color6;
@@ -298,4 +315,13 @@ body {
       }
     }
   }
+}
+/* Agrega transiciones para los botones */
+#lend-option{
+  transition: background-color 0.3s, color 0.3s;
+  display: none;
+}
+
+#borrow-option{
+  transition: background-color 0.3s, color 0.3s;
 }
