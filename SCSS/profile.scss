@@ -1,0 +1,122 @@
+//TEXTOS
+$color1: #fff;
+$color2: #000;
+$color3: #cccccc;
+$color4: #001f3f;
+$color5: #ff0000;
+$color6: #008000;
+$color7: #ffff00;
+$color8: #3a76b5;
+
+body {
+  background-color: $color2;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.header{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    &_fa-chevron{
+        color: $color1;
+        font-size:25pt;
+    }
+
+    &_h2{
+        color: $color1;
+        font-size: 30pt;
+        margin-right:70px ;
+    }
+}
+
+.image{
+    text-align: center;
+    &_img{
+        width: 60%;
+        border-radius: 50%;
+    }
+}
+
+.name{
+    text-align: center;
+    &_name{
+        font-size: 25pt;
+        color: $color1;
+        object-fit: contain;
+    }
+}
+
+.informations{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    .antiguity{
+        text-align: center;
+
+        &_text{
+            color: $color1;
+            font-size: 20pt;
+        }
+
+        &_time{
+            color: $color1;
+            font-size: 15pt;
+        }
+    }
+
+    .stars{
+        
+        &_i{
+            margin-top: 40px;
+            color: $color7;
+            font-size: 15pt;
+            flex-direction: column;
+        }
+        &_i_fa-stars{
+            justify-content: center;
+        }
+
+    }
+}
+
+.stars_pa{
+    &-p{
+        color: $color1;
+        font-size: 20pt;
+    }
+}
+
+
+.com{
+&-s{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+&_photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+}
+
+&_section{
+    &_name{
+        color: $color8;
+        margin-left: 30px;
+        font-size: 13pt;
+    }
+
+    &_com{
+        color: $color3;
+        margin-left: 30px;
+    }
+}
+}

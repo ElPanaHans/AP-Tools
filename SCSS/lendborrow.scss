@@ -20,12 +20,19 @@ body {
   &_fa-solid {
     color: $color1;
     font-size: 20pt;
-    margin: 0px 20px 0px 1px;
+    position: fixed;
+    left: 0;
+    margin-left: 20px;
   }
   &_img {
     width: 170px;
     padding-top: 10px;
+    padding-left: 20px;
   }
+}
+
+.header.opened .header_fa-solid {
+  transform: translateX(0);
 }
 
 .options {
@@ -57,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
 
-  :focus{
+  :focus {
     background-color: $color4;
     color: $color1;
     border-color: transparent;
@@ -132,7 +139,7 @@ body {
   }
 }
 .contenedor {
-  .btnss{
+  .btnss {
     border-radius: 15px;
   }
   &-1 {
@@ -320,11 +327,88 @@ body {
   }
 }
 /* Agrega transiciones para los botones */
-#lend-option{
+#lend-option {
   transition: background-color 0.3s, color 0.3s;
   display: none;
 }
 
-#borrow-option{
+#borrow-option {
   transition: background-color 0.3s, color 0.3s;
+}
+
+.nav {
+  display: none;
+  text-align: center;
+  position: fixed;
+  background-color: $color4;
+  width: 60%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &_fa-solid{
+    color: $color1;
+    font-size: 20pt;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  &_img {
+    width: 150px;
+    margin-top: 50px;
+  }
+
+  &_a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+
+    :hover {
+      background-color: $color3;
+      color: $color4;
+    }
+  }
+
+  &_a-3 {
+    justify-content: bottom;
+  }
+
+  &_uls {
+    background-color: $color1;
+    color: $color2;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 17pt;
+
+    :visited {
+      color: $color2;
+    }
+
+    :link {
+      color: $color2;
+    }
+  }
+
+  &_ul-3 {
+    margin-top: 110px;
+  }
+}
+
+.header.opened .header_fa-solid {
+  right: 20px; /* Posición del botón cuando el menú está abierto */
+}
+
+.header.opened .nav {
+  display: block; /* Cambio de display: none a display: fixed */
+}
+
+.header.opened .nav_btn_hidden {
+  display: none; /* Ocultar el botón del menú cuando está abierto */
+}
+
+.header.opened .nav_img {
+  display: none; /* Opcional: ocultar el logotipo cuando está abierto */
 }
