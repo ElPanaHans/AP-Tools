@@ -44,7 +44,7 @@ body {
   }
 
   &_borrow {
-    color: $color2;
+    color: $color4;
     padding: 15px 30px 15px 30px;
     background-color: $color3;
     border-radius: 10px;
@@ -132,6 +132,9 @@ body {
   }
 }
 .contenedor {
+  .btnss{
+    border-radius: 15px;
+  }
   &-1 {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     width: 80%;
