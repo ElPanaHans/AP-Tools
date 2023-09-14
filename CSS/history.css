@@ -1,0 +1,14 @@
+body {
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+}
+
+.back {
+  text-align: center;
+  background-color: red;
+}
+.back_fa-chevron {
+  color: #fff;
+}
+
+/*# sourceMappingURL=history.css.map */
