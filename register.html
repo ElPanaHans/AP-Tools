@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="600px, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AP Tools register</title>
-    <link rel="stylesheet" href="/CSS/normalize.css">
-    <link rel="stylesheet" href="/CSS/register.css">
-    <link rel="shortcut icon" href="/IMGS/logo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,400&family=Josefin+Slab:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/register.css" />
+    <link rel="shortcut icon" href="/IMGS/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,400&family=Josefin+Slab:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
     <script src="/JS/app.js"></script>
-    
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="loader">
-        <img src="/IMGS/logo.png" alt="Loader" class="loader_img" id="loader">
-      </div>
-      
+      <img src="/IMGS/logo.png" alt="Loader" class="loader_img" id="loader" />
+    </div>
+
     <header class="header">
-        <img src="/IMGS/logoT.png" alt="Logo AP-Tools" class="header__img">
+      <img src="/IMGS/logoT.png" alt="Logo AP-Tools" class="header__img" />
     </header>
 
-    <section class="welcome">
-        <p class="welcome_textOne">Hi There!</p>
-        <p class="welcome_textTwo">Let's Get Started</p>
-    </section>
+    <section class="contenedor">
+      <div class="contenedor-1"></div>
+      <div class="contenedor-2">
+        <section class="welcome">
+          <p class="welcome_textOne">Hi There!</p>
+          <p class="welcome_textTwo">Let's Get Started</p>
+        </section>
 
-    <section class="form">
-        <input type="text" class="form_fname" placeholder="First name" id="f-Name" required>
-        <input type="text" class="form_lname" placeholder="Last name" id="l-Name" required>
-        <input type="email" name="email" id="form_email" placeholder="Email" required>
-        <input type="date" id="form_date" name="date_form" min="2005-01-01" required/>
-        <input type="tel" name="tel" id="form_tel" placeholder="Phone number" required>
-        <input type="password" name="pass" id="form_pass" placeholder="Password" required>
-        <input type="password" name="pass2" id="form_passConfirm" placeholder="Confirm Password" required>
-        <a  class="form_a" href="index.html"><button type="submit" class="form_create" onclick="saveFormData()">Create an account ></button></a>
-        <p class="form_or">.... Or ....</p>
-        <a href="index.html"><p class="form_logIn">Log In</p></a>
+        <section class="form">
+          <input
+            type="text"
+            class="form_fname"
+            placeholder="First name"
+            id="f-Name"
+            required
+          />
+          <input
+            type="text"
+            class="form_lname"
+            placeholder="Last name"
+            id="l-Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="form_email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="date"
+            id="form_date"
+            name="date_form"
+            min="2005-01-01"
+            required
+          />
+          <input
+            type="tel"
+            name="tel"
+            id="form_tel"
+            placeholder="Phone number"
+            required
+          />
+          <input
+            type="password"
+            name="pass"
+            id="form_pass"
+            placeholder="Password"
+            required
+          />
+          <input
+            type="password"
+            name="pass2"
+            id="form_passConfirm"
+            placeholder="Confirm Password"
+            required
+          />
+          <a class="form_a" href="index.html"
+            ><button type="submit" class="form_create" onclick="saveFormData()">
+              Create an account >
+            </button></a
+          >
+          <p class="form_or">.... Or ....</p>
+          <a href="index.html"><p class="form_logIn">Log In</p></a>
+        </section>
+      </div>
     </section>
-
     <script src="/JS/loader.js"></script>
-</body>
+  </body>
 </html>

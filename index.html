@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="600px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AP Tools</title>
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/index.css">
@@ -18,22 +18,27 @@
         <img src="/IMGS/logoT.png" alt="Logo AP-Tools" class="header__img">
     </header>
 
-    <div class="loginDraw">
-        <img src="/IMGS/register2.1.png" class="drawLogin" alt="Draw of a person fixing anything">
-    </div>
-
-    <div class="welcome">
-        <p class="welcome_textOne">Welcome Back!</p>
-        <p class="welcome_textTwo">Please, Log in</p>
-    </div>
-
-    <section class="login">
-        <input type="email" name="Email" id="loginInput" placeholder="Username / Email" required>
-        <input type="password" name="Email" id="passwordInput" placeholder="Password" required>
-        <a href="verify.html"><button type="submit" class="login_Continue">Continue ></button></a>
-        <p class="login_or">.... Or ....</p>
-        <a href="register.html"><p class="login_Create">Create an Account</p></a>
-    </section>
+    <section class="contenedor">
+        <div class="contenedor-1">
+            <div class="loginDraw">
+                <img src="/IMGS/register2.1.png" class="drawLogin" alt="Draw of a person fixing anything">
+            </div>
+        
+            <div class="welcome">
+                <p class="welcome_textOne">Welcome Back!</p>
+                <p class="welcome_textTwo">Please, Log in</p>
+            </div>
+        
+            <section class="login">
+                <input type="email" name="Email" id="loginInput" placeholder="Username / Email" required>
+                <input type="password" name="Email" id="passwordInput" placeholder="Password" required>
+                <a href="verify.html"><button type="submit" class="login_Continue">Continue ></button></a>
+                <p class="login_or">.... Or ....</p>
+                <a href="register.html"><p class="login_Create">Create an Account</p></a>
+            </section>
+        </div>
+        <div class="contenedor-2"></div>
+      </section>
 
     <footer class="footer">
         <p class="footer_copy">AP-Tools &copy; 2023</p>

@@ -6,116 +6,531 @@ $color4: #001f3f;
 $color5: #ff0000;
 $color6: #008000;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 
-body {
-  background-color: $color2;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.header {
-  display: flex;
-
-  &__img {
-    width: 170px;
-    margin: 0 auto;
-    padding-top: 10px;
+@media (max-width: 575px) {
+  body {
+    background-color: $color2;
+    font-family: "Montserrat", sans-serif;
   }
-}
 
-.drawLogin {
-  width: 320px;
-  display: block;
-  margin: auto;
-}
-
-.welcome {
-  margin: 0 auto;
-
-  &_textOne {
-    font-weight: lighter;
-    color: $color3;
+  .header {
     text-align: center;
-    font-size: 20pt;
+
+    &__img {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+
+    &-1 {
+      width: 100%;
+    }
+    &-2 {
+      display: none;
+    }
   }
 
-  &_textTwo {
-    font-weight: normal;
-    color: $color1;
+  .drawLogin {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+  .welcome {
     text-align: center;
-    font-size: 17pt;
-  }
-}
 
-.login {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    &_textOne {
+      font-weight: lighter;
+      color: $color3;
+      text-align: center;
+      font-size: 2em;
+    }
 
-  &_Continue {
-    color: $color1;
-    background-color: $color4;
-    text-align: center;
-    padding: 15px 60px;
-    border-radius: 15px;
-    margin-top: 20px;
-    border-color: transparent;
+    &_textTwo {
+      font-weight: normal;
+      color: $color1;
+      text-align: center;
+      font-size: 2em;
+    }
   }
 
-  &_Continue:hover {
-    background-color: $color1;
-    color: $color4;
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_Continue {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 15px 60px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+
+    &_Continue:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      color: $color3;
+      text-align: center;
+    }
+
+    &_Create {
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 15px 40px;
+      border-radius: 15px;
+    }
+
+    &_Create:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 
-  &_or {
-    color: $color3;
-    text-align: center;
-  }
-
-  &_Create {
-    background-color: $color1;
-    text-align: center;
-    color: $color2;
-    padding: 15px 40px;
-    border-radius: 15px;
-  }
-
-  &_Create:hover {
+  input {
     background-color: $color3;
-    color: $color4;
-  }
-
-  a {
-    text-decoration: none;
-  }
-}
-
-input {
-  background-color: $color3;
-  color: $color2;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: bolder;
-  width: 170px;
-  padding: 10px;
-}
-
-input:focus {
-  background-color: $color4;
-  color: $color1;
-}
-
-#passwordInput {
-  margin-top: 20px;
-}
-
-.footer {
-  &_copy {
-    color: $color1;
+    color: $color2;
     text-align: center;
-    background-color: $color4;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 60%;
     padding: 10px;
-    font-family: monospace;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  #passwordInput {
+    margin-top: 20px;
+  }
+
+  .footer {
+    &_copy {
+      color: $color1;
+      text-align: center;
+      background-color: $color4;
+      padding: 10px;
+      font-family: monospace;
+    }
   }
 }
 
+// --------------------------------------------------------------------------
+// Tablets
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: $color2;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    &__img {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-self: unset;color: #000;
+
+    &-1 {
+      display: block;
+    }
+    &-2 {
+      display: none;
+    }
+  }
+
+  .drawLogin {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      font-weight: lighter;
+      color: $color3;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    &_textTwo {
+      font-weight: normal;
+      color: $color1;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_Continue {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 30px 70px;
+      font-size: 1.3em;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+
+    &_Continue:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      color: $color3;
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    &_Create {
+      font-size: 1.3em;
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 20px 40px;
+      border-radius: 15px;
+    }
+
+    &_Create:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  input {
+    font-size: 1.3em;
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 70%;
+    padding: 25px;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  #passwordInput {
+    margin-top: 20px;
+  }
+
+  .footer {
+    &_copy {
+      color: $color1;
+      text-align: center;
+      background-color: $color4;
+      padding: 30px;
+      font-family: monospace;
+      font-size: 1.5em;
+    }
+  }
+}
+
+// Tablets en horizontal
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: $color2;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    &__img {
+      width: 30%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 95%;
+
+    &-1 {
+      width: 50%;
+    }
+    &-2 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
+    }
+  }
+
+  .drawLogin {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      font-weight: lighter;
+      color: $color3;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    &_textTwo {
+      font-weight: normal;
+      color: $color1;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_Continue {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 30px 70px;
+      font-size: 1.3em;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+
+    &_Continue:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      color: $color3;
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    &_Create {
+      font-size: 1.3em;
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 20px 40px;
+      border-radius: 15px;
+    }
+
+    &_Create:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  input {
+    font-size: 1.3em;
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 70%;
+    padding: 25px;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  #passwordInput {
+    margin-top: 20px;
+  }
+
+  .footer {
+    &_copy {
+      color: $color1;
+      text-align: center;
+      background-color: $color4;
+      padding: 30px;
+      font-family: monospace;
+      font-size: 1.5em;
+    }
+  }
+}
+
+// Portatiles
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  body {
+    background-color: $color2;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    &__img {
+      width: 25%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 95%;
+
+    &-1 {
+      width: 50%;
+    }
+    &-2 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
+    }
+  }
+
+  .drawLogin {
+    width: 40%;
+    display: block;
+    margin: auto;
+  }
+
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      font-weight: lighter;
+      color: $color3;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    &_textTwo {
+      font-weight: normal;
+      color: $color1;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_Continue {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 30px 70px;
+      font-size: 1.3em;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+
+    &_Continue:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      color: $color3;
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    &_Create {
+      font-size: 1.3em;
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 20px 40px;
+      border-radius: 15px;
+    }
+
+    &_Create:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  input {
+    font-size: 1.3em;
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 50%;
+    padding: 25px;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  #passwordInput {
+    margin-top: 20px;
+  }
+
+  .footer {
+    &_copy {
+      color: $color1;
+      text-align: center;
+      background-color: $color4;
+      padding: 30px;
+      font-family: monospace;
+      font-size: 1.5em;
+    }
+  }
+}

@@ -6,140 +6,602 @@ $color4: #001f3f;
 $color5: #ff0000;
 $color6: #008000;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 
 body {
   background-color: $color2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+// Dispositivos moviles
+@media (max-width: 575px) {
+  .header {
+    display: flex;
+    margin-top: 30px;
 
-.header {
-  display: flex;
-
-  &__img {
-    width: 170px;
-    margin: 0 auto;
-    padding-top: 10px;
-  }
-}
-
-.welcome {
-  text-align: center;
-
-  &_textOne {
-    color: $color3;
-    font-size: 20pt;
+    &__img {
+      width: 60%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
   }
 
-  &_textTwo {
-    color: $color1;
-    font-size: 23pt;
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+
+    &-1 {
+      display: none;
+    }
+    &-2 {
+      width: 100%;
+    }
   }
-}
-
-.form {
-  font-size: 10pt;
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
-  gap: 5%;
-  justify-content: space-between;
-
-  &_create {
-    color: $color1;
-    background-color: $color4;
+  .welcome {
     text-align: center;
-    padding: 20px 40px;
-    border-radius: 15px;
-    margin-top: 20px;
-    border-color: transparent;
-  }
-  &_a {
-    grid-column: 1 / span 2; /* Ocupa las dos columnas */
-    text-align: center;
+
+    &_textOne {
+      color: $color3;
+      font-size: 2em;
+    }
+
+    &_textTwo {
+      color: $color1;
+      font-size: 2em;
+    }
   }
 
-  &_create:hover {
-    background-color: $color1;
-    color: $color4;
+  .form {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &_create {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 20px 40px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+    &_a {
+      grid-column: 1 / span 2; /* Ocupa las dos columnas */
+      text-align: center;
+    }
+
+    &_create:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      grid-column: 1 / span 1; /* Ocupa las dos columnas */
+      color: $color3;
+      text-align: center;
+    }
+
+    &_logIn {
+      grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &_logIn:hover {
+      background-color: $color3;
+      color: $color4;
+    }
   }
 
-  &_or {
-    grid-column: 1 / span 1; /* Ocupa las dos columnas */
-    color: $color3;
-    text-align: center;
+  #form_email {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    margin: auto;
+    width: 90%;
   }
 
-  &_logIn {
-    grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
-    background-color: $color1;
-    text-align: center;
+  input {
+    width: 90%;
+    padding: 15px 0px;
+    background-color: $color3;
     color: $color2;
-    padding: 15px;
     border-radius: 15px;
-    margin-top: 5px;
+    text-align: center;
     font-weight: bolder;
   }
 
-  a {
-    text-decoration: none;
+  input:focus {
+    background-color: $color4;
+    color: $color1;
   }
 
-  &_logIn:hover {
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
+  }
+}
+
+// Tablets
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: flex;
+    margin-top: 30px;
+
+    &__img {
+      width: 35%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+
+    &-1 {
+      display: none;
+    }
+    &-2 {
+      width: 100%;
+    }
+  }
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      color: $color3;
+      font-size: 2.5em;
+    }
+
+    &_textTwo {
+      color: $color1;
+      font-size: 2.5em;
+    }
+  }
+
+  .form {
+    font-size: 1.3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &_create {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 20px 40px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+    &_a {
+      grid-column: 1 / span 2; /* Ocupa las dos columnas */
+      text-align: center;
+    }
+
+    &_create:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      grid-column: 1 / span 1; /* Ocupa las dos columnas */
+      color: $color3;
+      text-align: center;
+    }
+
+    &_logIn {
+      grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &_logIn:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+  }
+
+  #form_email {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    margin: auto;
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+    padding: 15px 0px;
     background-color: $color3;
-    color: $color4;
+    color: $color2;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
   }
 }
 
-#form_email {
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-row-end: 3;
-  grid-column-end: 3;
-  margin: auto;
-  width: 90%;
-}
+// Tablet horizontal
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
-input {
-  width: 90%;
-  padding: 15px 0px;
-  background-color: $color3;
-  color: $color2;
-  border-radius: 15px;
-  text-align: center;
-  font-weight: bolder;
-}
-
-input:focus {
-  background-color: $color4;
-  color: $color1;
-}
-
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  margin: auto;
-
-  &_img {
-    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
-    animation: spin 2s linear infinite;
+    &__img {
+      width: 30%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
   }
 
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg); /* Rotación inicial */
+  .contenedor {
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+    &-1 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
     }
-    100% {
-      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+    &-2 {
+      width: 50%;
     }
+  }
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      color: $color3;
+      font-size: 2.2em;
+    }
+
+    &_textTwo {
+      color: $color1;
+      font-size: 2.2em;
+    }
+  }
+
+  .form {
+    padding-left: 40px;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &_create {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 20px 40px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+    &_a {
+      grid-column: 1 / span 2; /* Ocupa las dos columnas */
+      text-align: center;
+    }
+
+    &_create:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      grid-column: 1 / span 1; /* Ocupa las dos columnas */
+      color: $color3;
+      text-align: center;
+    }
+
+    &_logIn {
+      grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &_logIn:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+  }
+
+  #form_email {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    margin: auto;
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+    padding: 15px 0px;
+    background-color: $color3;
+    color: $color2;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
+  }
 }
+
+// Portatiles
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .header {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__img {
+      width: 20%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .contenedor {
+    display: flex;
+    width: 90%;
+    margin: auto;
+
+    &-1 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
+    }
+    &-2 {
+      width: 50%;
+    }
+  }
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      color: $color3;
+      font-size: 2em;
+    }
+
+    &_textTwo {
+      color: $color1;
+      font-size: 2em;
+    }
+  }
+
+  .form {
+    padding-left: 50px;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &_create {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 20px 40px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+    &_a {
+      grid-column: 1 / span 2; /* Ocupa las dos columnas */
+      text-align: center;
+    }
+
+    &_create:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      grid-column: 1 / span 1; /* Ocupa las dos columnas */
+      color: $color3;
+      text-align: center;
+    }
+
+    &_logIn {
+      grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &_logIn:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+  }
+
+  #form_email {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    margin: auto;
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+    padding: 15px 0px;
+    background-color: $color3;
+    color: $color2;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
+  }
 }
