@@ -14,6 +14,11 @@
     
 </head>
 <body>
+
+    <div class="loader">
+        <img src="/IMGS/logo.png" alt="Loader" class="loader_img" id="loader">
+      </div>
+      
     <header class="header">
         <img src="/IMGS/logoT.png" alt="Logo AP-Tools" class="header__img">
     </header>
@@ -27,9 +32,10 @@
     </section>
 
     <div class="btn">
-        <button class="btn-s" id="Deny">Deny</button>
-        <button class="btn-s" id="Accept">Accept</button>
+        <a href="javascript: history.go(-1)"><button class="btn-s" id="Deny">Deny</button></a>
+        <a href="chat.html"><button class="btn-s" id="Accept">Accept</button></a>
     </div>
-
+    
+    <script src="/JS/loader.js"></script>
 </body>
 </html>

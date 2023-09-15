@@ -6,70 +6,64 @@ body {
 
 .header {
   display: flex;
+  margin-top: 30px;
 }
 .header__img {
-  width: 170px;
+  width: 200px;
   margin: 0 auto;
   padding-top: 10px;
 }
 
-.text_One {
-  text-align: center;
-  color: #cccccc;
-  font-size: 18pt;
-  font-weight: lighter;
-}
-
-.image {
+.text {
   text-align: center;
 }
-.image_img {
+.text_text {
   color: #fff;
-  display: block;
-  text-align: center;
-  font-size: 150pt;
+  font-size: 30pt;
 }
 
-.input_container {
-  text-align: center;
-  margin: 50px auto;
-}
-.input_input {
-  display: none;
-}
-.input_label {
-  background-color: #cccccc;
-  color: #001f3f;
-  padding: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.input_label:hover {
+.condition {
   background-color: #fff;
-  color: #001f3f;
-  border: 2px solid #001f3f;
+  height: 350px;
+  overflow: scroll;
 }
-.input_continue {
-  background-color: #001f3f;
-  color: #fff;
-  display: block;
+.condition_text {
+  color: #000;
+  font-size: 14pt;
+  padding: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
   text-align: center;
-  margin: 50px auto;
-  padding: 15px 20px;
-  border-radius: 5px;
+}
+.btn-s {
+  padding: 10px 40px;
+  font-size: 15pt;
+  margin: 10px;
+}
+.btn #Deny {
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  background-color: #ff0000;
+  color: #cccccc;
   border-color: transparent;
 }
-.input_continue:hover {
-  background-color: #fff;
-  color: #001f3f;
-}
-
-.footer_copy {
+.btn #Deny:hover {
+  background-color: #000;
   color: #fff;
+}
+.btn #Accept {
+  transition: background-color 0.3s, color 0.3s;
   text-align: center;
-  background-color: #001f3f;
-  padding: 10px;
-  font-family: monospace;
+  background-color: #008000;
+  color: #cccccc;
+  border-color: transparent;
+}
+.btn #Accept:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .loader {
@@ -97,4 +91,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=verify.css.map */
+/*# sourceMappingURL=conditions.css.map */

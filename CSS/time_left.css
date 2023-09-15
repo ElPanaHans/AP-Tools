@@ -14,42 +14,25 @@ body {
   font-size: 25pt;
 }
 
-.text {
-  text-align: center;
-}
 .text_text {
   color: #fff;
   font-size: 35pt;
-  font-weight: bolder;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.person-1, .person-2 {
-  margin: 20px auto;
-  margin-bottom: 30px;
-  width: 70%;
+.data {
+  background-color: #fff;
   display: flex;
-  background-color: #001f3f;
-}
-
-.foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.foto_foto {
+  justify-content: space-around;
+  border-radius: 15px;
+  width: 80%;
+  margin: 40px auto;
   padding: 10px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-}
-
-.info_name {
-  font-size: 15pt;
-  color: #fff;
-}
-.info_date {
-  color: #fff;
   font-size: 13pt;
+}
+.data .datad1_name, .data .datad1_tool, .data .datad1_time {
+  font-weight: bolder;
 }
 
 .loader {
@@ -77,4 +60,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=history.css.map */
+/*# sourceMappingURL=time_left.css.map */

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="600px, initial-scale=1.0" />
-    <title>AP Tools Chat</title>
-    <link rel="stylesheet" href="/CSS/normalize.css" />
-    <link rel="stylesheet" href="/CSS/history.css" />
+    <title>AP Tools History</title>
+    <link rel="stylesheet" href="/CSS/normalize.css"/>
+    <link rel="stylesheet" href="/CSS/history.css"/>
     <link rel="shortcut icon" href="/IMGS/logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +14,11 @@
     />
   </head>
   <body>
+
+    <div class="loader">
+      <img src="/IMGS/logo.png" alt="Loader" class="loader_img" id="loader">
+    </div>
+    
     <div class="back">
         <a href="javascript: history.go(-1)"><i class="fa-solid fa-chevron-left back_fa-chevron"></i></a>
       </div>
@@ -23,8 +28,27 @@
       </div>
 
       <section class="person-1">
-
+        <div class="foto">
+          <img src="/IMGS/perfiles/perfil1.jpg" alt="foto perfil 1" class="foto_foto">
+        </div>
+        
+        <div class="info">
+          <p class="info_name">Roberto Salazar</p>
+          <p class="info_date">1 Week ago</p>
+        </div>
       </section>
 
+      <section class="person-2">
+        <div class="foto">
+          <img src="/IMGS/perfiles/perfil2.jpg" alt="foto perfil 1" class="foto_foto">
+        </div>
+        
+        <div class="info">
+          <p class="info_name">Luis Alberto</p>
+          <p class="info_date">1 Month ago</p>
+        </div>
+      </section>
+
+      <script src="/JS/loader.js"></script>
   </body>
 </html>

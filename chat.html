@@ -17,24 +17,29 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,400&family=Josefin+Slab:wght@100;400&display=swap"
       rel="stylesheet"
     />
-    <script src="/JS/app.js"></script>
   </head>
   <body>
+
+    <div class="loader">
+      <img src="/IMGS/logo.png" alt="Loader" class="loader_img" id="loader">
+    </div>
+
+    
     <section class="info">
       <div class="info_back">
-        <a href="javascript: history.go(-1)"><i class="fa-solid fa-chevron-left info_fa-chevron"></i></a>
+        <a href="lendborrow.html"><i class="fa-solid fa-chevron-left info_fa-chevron"></i></a>
       </div>
       
       <div class="info_info">
         <img
-          src="/IMGS/perfiles/perfil1.jpg"
+        src="/IMGS/perfiles/perfil1.jpg"
           alt="Logo identificador"
           class="info_img"
         />
         <p class="info_name">Roberto Salazar</p>
       </div>
     </section>
-
+    
     <section class="chat">
       <div class="chats_1 chats" id="chat-1">
         <p class="chat_1_text chat_1_text-1">
@@ -42,13 +47,13 @@
           the tool and at what time?
         </p>
       </div>
-
+      
       <div class="chats_2 chats" id="chat-2">
         <p class="chat_1_text chat_1_text-2">
           is it okay with you if we meet at 5pm here: www.maps.com/barrio-zurqui
         </p>
       </div>
-
+      
       <div class="chats_3 chats" id="chat-3">
         <p class="chat_1_text chat_1_text-3">
           Okay , see you there at that time
@@ -62,4 +67,7 @@
       <i class="fa-solid fa-plus tools_i-2 tools-i"></i>
     </section>
   </body>
-</html>
+  <script src="/JS/app.js"></script>
+  <script src="/JS/loader.js"></script>
+  </html>
+  
