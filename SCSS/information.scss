@@ -8,9 +8,11 @@ $color6: #008000;
 $color7: #ffff00;
 $color8: #3a76b5;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
 body {
   background-color: $color2;
-  font-family: "Josefin Sans", sans-serif, "Josefin Slab", serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header{
@@ -132,6 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    margin: auto;
   
     &_img {
       max-width: 100px; /* Tamaño máximo de la imagen del cargador */
