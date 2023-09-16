@@ -8,9 +8,15 @@ $color6: #008000;
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 
+*{
+  box-sizing: border-box;
+  border-color: transparent;
+}
+
 body {
   background-color: $color2;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 // --------------------------------------------
 // Dispositivos moviles
@@ -460,6 +466,136 @@ body {
   }
 
   .footer {
+    &_copy {
+      font-size: 1.2em;
+      color: $color1;
+      text-align: center;
+      background-color: $color4;
+      padding: 10px;
+    }
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
+  }
+}
+
+// PC Escritorio
+@media screen and (min-width: 1440px) {
+  .header {
+    display: flex;
+
+    &__img {
+      width: 10%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .text {
+    &_One {
+      text-align: center;
+      color: $color3;
+      font-size: 1.7em;
+      font-weight: lighter;
+    }
+  }
+
+  .image {
+    text-align: center;
+    &_img {
+      display: block;
+      color: $color1;
+      width: 40%;
+      margin: auto;
+    }
+  }
+
+  .contenedor {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+
+    &-1 {
+      width: 50%;
+    }
+    &-2 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
+    }
+  }
+
+  .input {
+    &_container {
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    &_input {
+      display: none;
+    }
+
+    &_label {
+      font-size: 1em;
+      background-color: $color3;
+      color: $color4;
+      padding: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    &_label:hover {
+      background-color: $color1;
+      color: $color4;
+      border: 2px solid $color4;
+    }
+
+    &_continue {
+      font-size: 1.2em;
+      background-color: $color4;
+      color: $color1;
+      display: block;
+      text-align: center;
+      margin: 50px auto;
+      padding: 15px 20px;
+      border-radius: 15px;
+      text-decoration: none;
+    }
+
+    &_continue:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+  }
+
+  .footer {
+    margin-top: 7%;
     &_copy {
       font-size: 1.2em;
       color: $color1;

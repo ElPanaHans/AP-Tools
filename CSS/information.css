@@ -448,5 +448,116 @@ body {
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .header_fa-chevron {
+    color: #fff;
+    font-size: 2.3em;
+  }
+  .header_h2 {
+    color: #fff;
+    font-size: 2.3em;
+    margin-right: 370px;
+  }
+  .image {
+    text-align: center;
+  }
+  .image_img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  .name {
+    text-align: center;
+  }
+  .name_name {
+    font-size: 1.7em;
+    color: #fff;
+    object-fit: contain;
+  }
+  .informations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .informations .antiguity {
+    text-align: center;
+  }
+  .informations .antiguity_text {
+    color: #fff;
+    font-size: 1.7em;
+  }
+  .informations .antiguity_time {
+    color: #fff;
+    font-size: 1.7em;
+  }
+  .informations .stars_i {
+    margin-top: 40px;
+    color: #ffff00;
+    font-size: 1.7em;
+    flex-direction: column;
+  }
+  .informations .stars_i_fa-stars {
+    justify-content: center;
+  }
+  .stars_pa-p {
+    color: #fff;
+    font-size: 1.7em;
+  }
+  .com-s {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .com_photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+  }
+  .com_section_name {
+    color: #3a76b5;
+    margin-left: 30px;
+    font-size: 1.3em;
+  }
+  .com_section_com {
+    color: #cccccc;
+    margin-left: 30px;
+    font-size: 1.2em;
+  }
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+  }
+  .loader_img {
+    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Rotación inicial */
+    }
+    100% {
+      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+    }
+  }
+}
 
 /*# sourceMappingURL=information.css.map */

@@ -350,10 +350,111 @@ body {
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
-
+    
     &-s {
+      border-color: transparent;
       padding: 10px 40px;
       font-size: 2em;
+      margin: 10px;
+      color: $color1;
+    }
+
+    #Deny {
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+      background-color: $color5;
+    }
+
+    #Deny:hover {
+      background-color: $color2;
+      color: $color1;
+    }
+
+    #Accept {
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+      background-color: $color6;
+    }
+
+    #Accept:hover {
+      background-color: $color2;
+      color: $color1;
+    }
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
+  }
+}
+
+// PC Escritorio
+@media screen and (min-width: 1440px){
+  .header {
+    display: flex;
+    margin-top: 30px;
+
+    &__img {
+      width: 10%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .text {
+    text-align: center;
+    &_text {
+      color: $color1;
+      font-size: 1.8em;
+    }
+  }
+
+  .condition {
+    margin: 0 auto;
+    width: 55%;
+    background-color: $color1;
+    height: 400px;
+    overflow: scroll;
+
+    &_text {
+      color: $color2;
+      font-size: 1.3em;
+      padding: 10px;
+    }
+  }
+
+  .btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+    &-s {
+      border-color: transparent;
+      padding: 10px 40px;
+      font-size: 1.5em;
       margin: 10px;
       color: $color1;
     }

@@ -133,7 +133,6 @@ $color6: #008000;
     }
   }
 }
-
 // --------------------------------------------------------------------------
 // Tablets
 
@@ -512,6 +511,141 @@ $color6: #008000;
     font-weight: bolder;
     width: 50%;
     padding: 25px;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  #passwordInput {
+    margin-top: 20px;
+  }
+
+  .footer {
+    &_copy {
+      color: $color1;
+      text-align: center;
+      background-color: $color4;
+      padding: 30px;
+      font-family: monospace;
+      font-size: 1.5em;
+    }
+  }
+}
+
+// PC Escritorio
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: $color2;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    &__img {
+      width: 10%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  }
+
+  .contenedor {
+    margin-top: 30px;
+    display: flex;
+    width: 60%;
+    margin: auto;
+
+    &-1 {
+      width: 50%;
+    }
+    &-2 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
+    }
+  }
+
+  .drawLogin {
+    width: 40%;
+    display: block;
+    margin: auto;
+  }
+
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      font-weight: lighter;
+      color: $color3;
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    &_textTwo {
+      font-weight: normal;
+      color: $color1;
+      text-align: center;
+      font-size: 1.8em;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_Continue {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 15px 70px;
+      font-size: 1em;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+
+    &_Continue:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      color: $color3;
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    &_Create {
+      font-size: 1em;
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 10px 40px;
+      border-radius: 15px;
+    }
+
+    &_Create:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  input {
+    font-size: 1em;
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 50%;
+    padding: 10px;
   }
 
   input:focus {

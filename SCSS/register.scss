@@ -605,3 +605,153 @@ body {
     }
   }
 }
+
+// PC Escritorio
+@media screen and (min-width: 1440px) {
+  .header {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &__img {
+      width: 10%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+
+  .contenedor {
+    display: flex;
+    width: 60%;
+    margin: auto;
+
+    &-1 {
+      width: 50%;
+      background-image: url(../IMGS/patrones/patron1.png);
+      background-size: cover;
+    }
+    &-2 {
+      width: 50%;
+    }
+  }
+  .welcome {
+    text-align: center;
+
+    &_textOne {
+      color: $color3;
+      font-size: 1.5em;
+    }
+
+    &_textTwo {
+      color: $color1;
+      font-size: 1.5em;
+    }
+  }
+
+  .form {
+    padding-left: 50px;
+    font-size: 0.9em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &_create {
+      color: $color1;
+      background-color: $color4;
+      text-align: center;
+      padding: 12px 40px;
+      border-radius: 15px;
+      margin-top: 20px;
+      border-color: transparent;
+    }
+    &_a {
+      grid-column: 1 / span 2; /* Ocupa las dos columnas */
+      text-align: center;
+    }
+
+    &_create:hover {
+      background-color: $color1;
+      color: $color4;
+    }
+
+    &_or {
+      grid-column: 1 / span 1; /* Ocupa las dos columnas */
+      color: $color3;
+      text-align: center;
+    }
+
+    &_logIn {
+      grid-column: 1 / 3; /* Coloca "Log In" en la segunda columna */
+      background-color: $color1;
+      text-align: center;
+      color: $color2;
+      padding: 12px;
+      border-radius: 15px;
+      margin-top: 5px;
+      font-weight: bolder;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &_logIn:hover {
+      background-color: $color3;
+      color: $color4;
+    }
+  }
+
+  #form_email {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    margin: auto;
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+    padding: 11px 0px;
+    background-color: $color3;
+    color: $color2;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  input:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+    }
+  }
+}
