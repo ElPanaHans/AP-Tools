@@ -70,6 +70,7 @@ body {
     font-size: 1em;
     text-align: center;
     color: #000;
+    font-weight: bolder;
   }
   .iframe_map {
     border-radius: 15px;
@@ -450,6 +451,7 @@ body {
     font-size: 1.3em;
     text-align: center;
     color: #000;
+    font-weight: bolder;
   }
   .iframe_map {
     border-radius: 15px;
@@ -849,6 +851,7 @@ body {
     font-size: 1.3em;
     text-align: center;
     color: #000;
+    font-weight: bolder;
   }
   .iframe_map {
     border-radius: 15px;
@@ -1248,6 +1251,7 @@ body {
     font-size: 1.7em;
     text-align: center;
     color: #000;
+    font-weight: bolder;
   }
   .iframe_map {
     border-radius: 15px;
@@ -1645,6 +1649,7 @@ body {
     background-color: #cccccc;
     font-size: 1.2em;
     text-align: center;
+    font-weight: bolder;
   }
   .iframe_map {
     border-radius: 15px;

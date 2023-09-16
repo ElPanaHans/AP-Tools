@@ -63,16 +63,15 @@ body {
     &_label {
       font-size: 1.2em;
       background-color: $color3;
-      color: $color4;
+      color: $color2;
       padding: 20px;
       border-radius: 5px;
       cursor: pointer;
     }
 
     &_label:hover {
-      background-color: $color1;
-      color: $color4;
-      border: 2px solid $color4;
+      background-color: $color4;
+      color: $color1;
     }
 
     &_continue {
@@ -178,16 +177,15 @@ body {
     &_label {
       font-size: 1.5em;
       background-color: $color3;
-      color: $color4;
+      color: $color2;
       padding: 20px;
       border-radius: 5px;
       cursor: pointer;
     }
 
     &_label:hover {
-      background-color: $color1;
-      color: $color4;
-      border: 2px solid $color4;
+      background-color: $color4;
+      color: $color1;
     }
 
     &_continue {
@@ -306,7 +304,7 @@ body {
 
     &_label {
       font-size: 1.5em;
-      background-color: $color3;
+      background-color: $color2;
       color: $color4;
       padding: 20px;
       border-radius: 5px;
@@ -314,9 +312,8 @@ body {
     }
 
     &_label:hover {
-      background-color: $color1;
-      color: $color4;
-      border: 2px solid $color4;
+      background-color: $color4;
+      color: $color1;
     }
 
     &_continue {
@@ -434,7 +431,7 @@ body {
 
     &_label {
       font-size: 1em;
-      background-color: $color3;
+      background-color: $color2;
       color: $color4;
       padding: 20px;
       border-radius: 5px;
@@ -442,9 +439,8 @@ body {
     }
 
     &_label:hover {
-      background-color: $color1;
-      color: $color4;
-      border: 2px solid $color4;
+      background-color: $color4;
+      color: $color1;
     }
 
     &_continue {
@@ -571,9 +567,8 @@ body {
     }
 
     &_label:hover {
-      background-color: $color1;
-      color: $color4;
-      border: 2px solid $color4;
+      background-color: $color4;
+      color: $color1;
     }
 
     &_continue {

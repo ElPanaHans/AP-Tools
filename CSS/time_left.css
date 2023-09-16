@@ -31,6 +31,9 @@ body {
     padding: 10px;
     font-size: 1.1em;
   }
+  .data .datad_name, .data .datad_tool, .data .datad_time {
+    color: #000;
+  }
   .data .datad1_name, .data .datad1_tool, .data .datad1_time {
     font-weight: bolder;
   }
@@ -85,6 +88,9 @@ body {
     margin: 40px auto;
     padding: 10px;
     font-size: 1.5em;
+  }
+  .data .datad_name, .data .datad_tool, .data .datad_time {
+    color: #000;
   }
   .data .datad1_name, .data .datad1_tool, .data .datad1_time {
     font-weight: bolder;
@@ -141,6 +147,9 @@ body {
     padding: 10px;
     font-size: 1.5em;
   }
+  .data .datad_name, .data .datad_tool, .data .datad_time {
+    color: #000;
+  }
   .data .datad1_name, .data .datad1_tool, .data .datad1_time {
     font-weight: bolder;
   }
@@ -196,6 +205,9 @@ body {
     padding: 10px;
     font-size: 1.7em;
   }
+  .data .datad_name, .data .datad_tool, .data .datad_time {
+    color: #000;
+  }
   .data .datad1_name, .data .datad1_tool, .data .datad1_time {
     font-weight: bolder;
   }
@@ -250,6 +262,9 @@ body {
     margin: 40px auto;
     padding: 10px;
     font-size: 1.3em;
+  }
+  .data .datad_name, .data .datad_tool, .data .datad_time {
+    color: #000;
   }
   .data .datad1_name, .data .datad1_tool, .data .datad1_time {
     font-weight: bolder;

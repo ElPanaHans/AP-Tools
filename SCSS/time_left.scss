@@ -44,6 +44,14 @@ body {
     padding: 10px;
     font-size: 1.1em;
 
+    .datad{
+      &_name,
+      &_tool,
+      &_time{
+        color: $color2;
+      }
+    }
+
     .datad1 {
       &_name,
       &_tool,
@@ -113,6 +121,14 @@ body {
       margin: 40px auto;
       padding: 10px;
       font-size: 1.5em;
+
+      .datad{
+        &_name,
+        &_tool,
+        &_time{
+          color: $color2;
+        }
+      }
   
       .datad1 {
         &_name,
@@ -183,6 +199,14 @@ body {
       margin: 40px auto;
       padding: 10px;
       font-size: 1.5em;
+
+      .datad{
+        &_name,
+        &_tool,
+        &_time{
+          color: $color2;
+        }
+      }
   
       .datad1 {
         &_name,
@@ -253,6 +277,14 @@ body {
       margin: 40px auto;
       padding: 10px;
       font-size: 1.7em;
+
+      .datad{
+        &_name,
+        &_tool,
+        &_time{
+          color: $color2;
+        }
+      }
   
       .datad1 {
         &_name,
@@ -323,6 +355,14 @@ body {
       margin: 40px auto;
       padding: 10px;
       font-size: 1.3em;
+
+      .datad{
+        &_name,
+        &_tool,
+        &_time{
+          color: $color2;
+        }
+      }
   
       .datad1 {
         &_name,

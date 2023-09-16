@@ -39,16 +39,19 @@ body {
     width: 85%;
     background-color: $color1;
     height: 350px;
-    overflow: scroll;
+    overflow-y: auto;
+    text-align: left;
 
     &_text {
       color: $color2;
-      font-size: 14pt;
+      font-size: 1em;
       padding: 10px;
+      padding-right: 30px;
     }
   }
 
   .btn {
+    border-style: none;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -59,6 +62,7 @@ body {
       font-size: 15pt;
       margin: 10px;
       color: $color1;
+      border-style: none;
     }
 
     #Deny {
@@ -158,6 +162,7 @@ body {
       font-size: 2em;
       margin: 10px;
       color: $color1;
+      border-style: none;
     }
 
     #Deny {

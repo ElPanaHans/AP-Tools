@@ -27,14 +27,17 @@ body {
     width: 85%;
     background-color: #fff;
     height: 350px;
-    overflow: scroll;
+    overflow-y: auto;
+    text-align: left;
   }
   .condition_text {
     color: #000;
-    font-size: 14pt;
+    font-size: 1em;
     padding: 10px;
+    padding-right: 30px;
   }
   .btn {
+    border-style: none;
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
@@ -45,6 +48,7 @@ body {
     font-size: 15pt;
     margin: 10px;
     color: #fff;
+    border-style: none;
   }
   .btn #Deny {
     transition: background-color 0.3s, color 0.3s;
@@ -129,6 +133,7 @@ body {
     font-size: 2em;
     margin: 10px;
     color: #fff;
+    border-style: none;
   }
   .btn #Deny {
     transition: background-color 0.3s, color 0.3s;
