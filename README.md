@@ -34,5 +34,5 @@ ya las poseen. La aplicación tiene medidas de seguridad para garantizar la fiab
 
 ## Conclusiones
 
-*Esta página web es una solución innovadora para el problema de la falta de herramientas de construcción y el gasto de dinero en herramientas que solo se usan una vez. 
+*Esta APP web es una solución innovadora para el problema de la falta de herramientas de construcción y el gasto de dinero en herramientas que solo se usan una vez. 
 La pagina web es segura y fáciles de usar, y ofrece una serie de beneficios para los usuarios.*
