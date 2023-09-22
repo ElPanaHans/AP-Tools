@@ -2,25 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
 body {
   background-color: #000;
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: "Montserrat", sans-serif; }
 
 @media (max-width: 575px) {
   .back {
     text-align: left;
     margin-left: 20px;
-    margin-top: 50px;
-  }
-  .back_fa-chevron {
-    color: #fff;
-    font-size: 2em;
-  }
+    margin-top: 50px; }
+    .back_fa-chevron {
+      color: #fff;
+      font-size: 2em; }
+
   .text_text {
     color: #fff;
     font-size: 3em;
     text-align: center;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
+
   .data {
     background-color: #fff;
     display: flex;
@@ -29,56 +27,51 @@ body {
     width: 80%;
     margin: 40px auto;
     padding: 10px;
-    font-size: 1.1em;
-  }
-  .data .datad_name, .data .datad_tool, .data .datad_time {
-    color: #000;
-  }
-  .data .datad1_name, .data .datad1_tool, .data .datad1_time {
-    font-weight: bolder;
-  }
+    font-size: 1.1em; }
+    .data .datad_name, .data .datad_tool, .data .datad_time {
+      color: #000; }
+    .data .datad1_name, .data .datad1_tool, .data .datad1_time {
+      font-weight: bolder; }
+
   .loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo semi-transparente */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    margin: auto;
-  }
-  .loader_img {
-    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
-    animation: spin 2s linear infinite;
-  }
+    margin: auto; }
+    .loader_img {
+      max-width: 100px;
+      /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite; }
   @keyframes spin {
     0% {
-      transform: rotate(0deg); /* Rotación inicial */
-    }
+      transform: rotate(0deg);
+      /* Rotación inicial */ }
     100% {
-      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
-    }
-  }
-}
+      transform: rotate(360deg);
+      /* Rotación completa (una vuelta completa) */ } } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .back {
     text-align: left;
     margin-left: 70px;
-    margin-top: 50px;
-  }
-  .back_fa-chevron {
-    color: #fff;
-    font-size: 3em;
-  }
+    margin-top: 50px; }
+    .back_fa-chevron {
+      color: #fff;
+      font-size: 3em; }
+
   .text_text {
     color: #fff;
     font-size: 3.5em;
     text-align: center;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
+
   .data {
     background-color: #fff;
     display: flex;
@@ -87,56 +80,51 @@ body {
     width: 80%;
     margin: 40px auto;
     padding: 10px;
-    font-size: 1.5em;
-  }
-  .data .datad_name, .data .datad_tool, .data .datad_time {
-    color: #000;
-  }
-  .data .datad1_name, .data .datad1_tool, .data .datad1_time {
-    font-weight: bolder;
-  }
+    font-size: 1.5em; }
+    .data .datad_name, .data .datad_tool, .data .datad_time {
+      color: #000; }
+    .data .datad1_name, .data .datad1_tool, .data .datad1_time {
+      font-weight: bolder; }
+
   .loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo semi-transparente */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    margin: auto;
-  }
-  .loader_img {
-    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
-    animation: spin 2s linear infinite;
-  }
+    margin: auto; }
+    .loader_img {
+      max-width: 100px;
+      /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite; }
   @keyframes spin {
     0% {
-      transform: rotate(0deg); /* Rotación inicial */
-    }
+      transform: rotate(0deg);
+      /* Rotación inicial */ }
     100% {
-      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
-    }
-  }
-}
+      transform: rotate(360deg);
+      /* Rotación completa (una vuelta completa) */ } } }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .back {
     text-align: left;
     margin-left: 70px;
-    margin-top: 50px;
-  }
-  .back_fa-chevron {
-    color: #fff;
-    font-size: 3em;
-  }
+    margin-top: 50px; }
+    .back_fa-chevron {
+      color: #fff;
+      font-size: 3em; }
+
   .text_text {
     color: #fff;
     font-size: 3.5em;
     text-align: center;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
+
   .data {
     background-color: #fff;
     display: flex;
@@ -145,56 +133,51 @@ body {
     width: 80%;
     margin: 40px auto;
     padding: 10px;
-    font-size: 1.5em;
-  }
-  .data .datad_name, .data .datad_tool, .data .datad_time {
-    color: #000;
-  }
-  .data .datad1_name, .data .datad1_tool, .data .datad1_time {
-    font-weight: bolder;
-  }
+    font-size: 1.5em; }
+    .data .datad_name, .data .datad_tool, .data .datad_time {
+      color: #000; }
+    .data .datad1_name, .data .datad1_tool, .data .datad1_time {
+      font-weight: bolder; }
+
   .loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo semi-transparente */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    margin: auto;
-  }
-  .loader_img {
-    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
-    animation: spin 2s linear infinite;
-  }
+    margin: auto; }
+    .loader_img {
+      max-width: 100px;
+      /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite; }
   @keyframes spin {
     0% {
-      transform: rotate(0deg); /* Rotación inicial */
-    }
+      transform: rotate(0deg);
+      /* Rotación inicial */ }
     100% {
-      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
-    }
-  }
-}
+      transform: rotate(360deg);
+      /* Rotación completa (una vuelta completa) */ } } }
 @media screen and (min-width: 1200px) and (max-width: 1439px) {
   .back {
     text-align: left;
     margin-left: 100px;
-    margin-top: 50px;
-  }
-  .back_fa-chevron {
-    color: #fff;
-    font-size: 3em;
-  }
+    margin-top: 50px; }
+    .back_fa-chevron {
+      color: #fff;
+      font-size: 3em; }
+
   .text_text {
     color: #fff;
     font-size: 4em;
     text-align: center;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
+
   .data {
     background-color: #fff;
     display: flex;
@@ -203,56 +186,51 @@ body {
     width: 80%;
     margin: 40px auto;
     padding: 10px;
-    font-size: 1.7em;
-  }
-  .data .datad_name, .data .datad_tool, .data .datad_time {
-    color: #000;
-  }
-  .data .datad1_name, .data .datad1_tool, .data .datad1_time {
-    font-weight: bolder;
-  }
+    font-size: 1.7em; }
+    .data .datad_name, .data .datad_tool, .data .datad_time {
+      color: #000; }
+    .data .datad1_name, .data .datad1_tool, .data .datad1_time {
+      font-weight: bolder; }
+
   .loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo semi-transparente */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    margin: auto;
-  }
-  .loader_img {
-    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
-    animation: spin 2s linear infinite;
-  }
+    margin: auto; }
+    .loader_img {
+      max-width: 150px;
+      /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite; }
   @keyframes spin {
     0% {
-      transform: rotate(0deg); /* Rotación inicial */
-    }
+      transform: rotate(0deg);
+      /* Rotación inicial */ }
     100% {
-      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
-    }
-  }
-}
+      transform: rotate(360deg);
+      /* Rotación completa (una vuelta completa) */ } } }
 @media screen and (min-width: 1440px) {
   .back {
     text-align: left;
     margin-left: 100px;
-    margin-top: 50px;
-  }
-  .back_fa-chevron {
-    color: #fff;
-    font-size: 2.5em;
-  }
+    margin-top: 50px; }
+    .back_fa-chevron {
+      color: #fff;
+      font-size: 2.5em; }
+
   .text_text {
     color: #fff;
     font-size: 3em;
     text-align: center;
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
+
   .data {
     background-color: #fff;
     display: flex;
@@ -261,39 +239,35 @@ body {
     width: 30%;
     margin: 40px auto;
     padding: 10px;
-    font-size: 1.3em;
-  }
-  .data .datad_name, .data .datad_tool, .data .datad_time {
-    color: #000;
-  }
-  .data .datad1_name, .data .datad1_tool, .data .datad1_time {
-    font-weight: bolder;
-  }
+    font-size: 1.3em; }
+    .data .datad_name, .data .datad_tool, .data .datad_time {
+      color: #000; }
+    .data .datad1_name, .data .datad1_tool, .data .datad1_time {
+      font-weight: bolder; }
+
   .loader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fondo semi-transparente */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    margin: auto;
-  }
-  .loader_img {
-    max-width: 100px; /* Tamaño máximo de la imagen del cargador */
-    animation: spin 2s linear infinite;
-  }
+    margin: auto; }
+    .loader_img {
+      max-width: 150px;
+      /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite; }
   @keyframes spin {
     0% {
-      transform: rotate(0deg); /* Rotación inicial */
-    }
+      transform: rotate(0deg);
+      /* Rotación inicial */ }
     100% {
-      transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
-    }
-  }
-}
+      transform: rotate(360deg);
+      /* Rotación completa (una vuelta completa) */ } } }
 
 /*# sourceMappingURL=time_left.css.map */

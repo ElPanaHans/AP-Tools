@@ -591,7 +591,7 @@ body {
     margin: auto;
 
     &_img {
-      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      max-width: 150px; /* Tamaño máximo de la imagen del cargador */
       animation: spin 2s linear infinite;
     }
 
@@ -639,18 +639,18 @@ body {
 
     &_textOne {
       color: $color3;
-      font-size: 1.5em;
+      font-size: 2.3em;
     }
 
     &_textTwo {
       color: $color1;
-      font-size: 1.5em;
+      font-size: 2.3em;
     }
   }
 
   .form {
     padding-left: 50px;
-    font-size: 0.9em;
+    font-size: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
     justify-items: center;
@@ -661,10 +661,11 @@ body {
       color: $color1;
       background-color: $color4;
       text-align: center;
-      padding: 12px 40px;
+      padding: 15px 40px;
       border-radius: 15px;
       margin-top: 20px;
       border-color: transparent;
+      font-size: 1.1em;
     }
     &_a {
       grid-column: 1 / span 2; /* Ocupa las dos columnas */
@@ -678,7 +679,7 @@ body {
 
     &_or {
       grid-column: 1 / span 1; /* Ocupa las dos columnas */
-      color: $color3;
+      color: $color1;
       text-align: center;
     }
 
@@ -687,7 +688,7 @@ body {
       background-color: $color1;
       text-align: center;
       color: $color2;
-      padding: 12px;
+      padding: 15px;
       border-radius: 15px;
       margin-top: 5px;
       font-weight: bolder;
@@ -714,7 +715,7 @@ body {
 
   input {
     width: 90%;
-    padding: 11px 0px;
+    padding: 20px 0px;
     background-color: $color3;
     color: $color2;
     border-radius: 15px;
@@ -741,7 +742,7 @@ body {
     margin: auto;
 
     &_img {
-      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      max-width: 150px; /* Tamaño máximo de la imagen del cargador */
       animation: spin 2s linear infinite;
     }
 

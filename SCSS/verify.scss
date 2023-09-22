@@ -452,7 +452,6 @@ body {
       margin: 50px auto;
       padding: 15px 20px;
       border-radius: 15px;
-      text-decoration: none;
     }
 
     &_continue:hover {
@@ -485,7 +484,7 @@ body {
     margin: auto;
 
     &_img {
-      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      max-width: 150px; /* Tamaño máximo de la imagen del cargador */
       animation: spin 2s linear infinite;
     }
 
@@ -614,7 +613,7 @@ body {
     margin: auto;
 
     &_img {
-      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      max-width: 150px; /* Tamaño máximo de la imagen del cargador */
       animation: spin 2s linear infinite;
     }
 
