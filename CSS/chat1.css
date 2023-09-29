@@ -5,6 +5,16 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+img {
+  object-fit: cover;
+}
+
+.info_back {
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+}
+
 @media (max-width: 575px) {
   .info {
     margin-top: 50px;
@@ -23,11 +33,11 @@ body {
     background-color: #cccccc;
     border-radius: 20px 10px;
   }
-  .info_info {
-    margin: 0 auto;
-  }
   .info_img {
-    width: 30%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
   }
   .info_name {
@@ -146,11 +156,11 @@ body {
     background-color: #cccccc;
     border-radius: 20px 10px;
   }
-  .info_info {
-    margin: 0 auto;
-  }
   .info_img {
-    width: 40%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
   }
   .info_name {
@@ -267,11 +277,11 @@ body {
     background-color: #cccccc;
     border-radius: 20px 10px;
   }
-  .info_info {
-    margin: 0 auto;
-  }
   .info_img {
-    width: 40%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
   }
   .info_name {
@@ -388,11 +398,11 @@ body {
     background-color: #cccccc;
     border-radius: 20px 10px;
   }
-  .info_info {
-    margin: 0 auto;
-  }
   .info_img {
-    width: 40%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
   }
   .info_name {
@@ -509,11 +519,11 @@ body {
     background-color: #cccccc;
     border-radius: 20px 10px;
   }
-  .info_info {
-    margin: 0 auto;
-  }
   .info_img {
-    width: 40%;
+    max-width: 200px;
+    max-height: 200px;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
   }
   .info_name {
@@ -613,4 +623,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=chat.css.map */
+/*# sourceMappingURL=chat1.css.map */

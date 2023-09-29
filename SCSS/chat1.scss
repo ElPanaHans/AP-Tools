@@ -1,0 +1,735 @@
+$color1: #fff;
+$color2: #000;
+$color3: #cccccc;
+$color4: #001f3f;
+$color5: #ff0000;
+$color6: #008000;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+body {
+  background-color: $color2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img{
+  object-fit: cover;
+}
+
+.info_back{
+  display: block;
+  position: absolute;
+  left: 0.5rem;
+}
+
+// Dispositivos moviles
+@media (max-width: 575px){
+  .info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  
+    &_fa-chevron{
+      color: $color1;
+      font-size: 2em;
+      padding: 5px;
+      margin-left: 30px;
+  
+      &:hover{
+          background-color: $color3;
+          border-radius: 20px 10px;
+          
+      }
+    }
+  
+    &_img {
+      max-width: 200px;
+      max-height: 200px;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+    }
+  
+    &_name {
+      font-size: 20pt;
+      color: $color1;
+      padding-top: 0px;
+    }
+  }
+  
+  .chats {
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1em;
+  
+    &_1 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  
+    &_2 {
+      color: $color2;
+      background-color: #cccccc;
+      padding: 10px;
+      border-radius: 15px;
+      margin-left: 10px;
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    &_3 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  }
+  
+  .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  
+    &-i {
+      font-size: 2em;
+      color: $color1;
+    }
+
+    &-i:hover{
+      background-color: #fff;
+      padding: 10px;
+      color: $color2;
+      border-radius: 15px;
+    }
+  
+    &_i-1 {
+      margin-left: 10px;
+    }
+  }
+  
+  #tools-chat {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15pt;
+  }
+  
+  #tools-chat:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+  
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+  }
+  }
+  
+}
+
+// Tablets
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  
+    &_fa-chevron{
+      color: $color1;
+      font-size: 2.5em;
+      padding: 5px;
+      margin-left: 30px;
+  
+      &:hover{
+          background-color: $color3;
+          border-radius: 20px 10px;
+          
+      }
+    }
+  
+    &_img {
+      max-width: 200px;
+      max-height: 200px;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+    }
+  
+    &_name {
+      font-size: 2.2em;
+      color: $color1;
+      padding-top: 0px;
+    }
+  }
+  
+  .chats {
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1.5em;
+  
+    &_1 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  
+    &_2 {
+      color: $color2;
+      background-color: #cccccc;
+      padding: 10px;
+      border-radius: 15px;
+      margin-left: 10px;
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    &_3 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  }
+  
+  .tools {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15%;
+  
+    &-i {
+      font-size: 2em;
+      color: $color1;
+    }
+
+    &-i:hover{
+      background-color: #fff;
+      padding: 10px;
+      color: $color2;
+      border-radius: 15px;
+    }
+  
+    &_i-1 {
+      margin-left: 10px;
+    }
+  }
+  
+  #tools-chat {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15pt;
+  }
+  
+  #tools-chat:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+  
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+  }
+  }
+  
+}
+
+// Tablet Horizontal
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  
+    &_fa-chevron{
+      color: $color1;
+      font-size: 2.5em;
+      padding: 5px;
+      margin-left: 30px;
+  
+      &:hover{
+          background-color: $color3;
+          border-radius: 20px 10px;
+          
+      }
+    }
+  
+    &_img {
+      max-width: 200px;
+      max-height: 200px;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+    }
+  
+    &_name {
+      font-size: 2.2em;
+      color: $color1;
+      padding-top: 0px;
+    }
+  }
+  
+  .chats {
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1.5em;
+  
+    &_1 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  
+    &_2 {
+      color: $color2;
+      background-color: #cccccc;
+      padding: 10px;
+      border-radius: 15px;
+      margin-left: 10px;
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    &_3 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  }
+  
+  .tools {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15%;
+  
+    &-i {
+      font-size: 2em;
+      color: $color1;
+    }
+
+    &-i:hover{
+      background-color: #fff;
+      padding: 10px;
+      color: $color2;
+      border-radius: 15px;
+    }
+  
+    &_i-1 {
+      margin-left: 10px;
+    }
+  }
+  
+  #tools-chat {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15pt;
+  }
+  
+  #tools-chat:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+  
+    &_img {
+      max-width: 100px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+  }
+  }
+  
+}
+
+// Portatil
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+  .info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  
+    &_fa-chevron{
+      color: $color1;
+      font-size: 2.5em;
+      padding: 5px;
+      margin-left: 30px;
+  
+      &:hover{
+          background-color: $color3;
+          border-radius: 20px 10px;
+          
+      }
+    }
+  
+    &_img {
+      max-width: 200px;
+      max-height: 200px;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+    }
+  
+    &_name {
+      font-size: 2.2em;
+      color: $color1;
+      padding-top: 0px;
+    }
+  }
+  
+  .chats {
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1.5em;
+  
+    &_1 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  
+    &_2 {
+      color: $color2;
+      background-color: #cccccc;
+      padding: 10px;
+      border-radius: 15px;
+      margin-left: 10px;
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    &_3 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  }
+  
+  .tools {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15%;
+  
+    &-i {
+      font-size: 2em;
+      color: $color1;
+    }
+
+    &-i:hover{
+      background-color: #fff;
+      padding: 10px;
+      color: $color2;
+      border-radius: 15px;
+    }
+  
+    &_i-1 {
+      margin-left: 10px;
+    }
+  }
+  
+  #tools-chat {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15pt;
+  }
+  
+  #tools-chat:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+  
+    &_img {
+      max-width: 150px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+  }
+  }
+  
+}
+
+// PC Escritorio
+@media screen and (min-width: 1440px){
+  .info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  
+    &_fa-chevron{
+      color: $color1;
+      font-size: 2.5em;
+      padding: 5px;
+      margin-left: 60px;
+  
+      &:hover{
+          background-color: $color3;
+          border-radius: 20px 10px;
+          
+      }
+    }
+  
+    &_img {
+      max-width: 200px;
+      max-height: 200px;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+    }
+  
+    &_name {
+      font-size: 1.7em;
+      color: $color1;
+      padding-top: 0px;
+    }
+  }
+  
+  .chats {
+    text-align: center;
+    width: 40%;
+    margin-top: 20px;
+    font-size: 1.3em;
+  
+    &_1 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  
+    &_2 {
+      color: $color2;
+      background-color: #cccccc;
+      padding: 10px;
+      border-radius: 15px;
+      margin-left: 10px;
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    &_3 {
+      color: $color1;
+      background-color: $color4;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: right;
+      margin-left: auto;
+      padding-right: 30px;
+    }
+  }
+  
+  .tools {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15%;
+  
+    &-i {
+      font-size: 2em;
+      color: $color1;
+    }
+
+    &-i:hover{
+      background-color: #fff;
+      padding: 10px;
+      color: $color2;
+      border-radius: 15px;
+    }
+  
+    &_i-1 {
+      margin-left: 10px;
+    }
+  }
+  
+  #tools-chat {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15pt;
+  }
+  
+  #tools-chat:focus {
+    background-color: $color4;
+    color: $color1;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    margin: auto;
+  
+    &_img {
+      max-width: 150px; /* Tamaño máximo de la imagen del cargador */
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg); /* Rotación inicial */
+      }
+      100% {
+        transform: rotate(360deg); /* Rotación completa (una vuelta completa) */
+      }
+  }
+  }
+  
+}
