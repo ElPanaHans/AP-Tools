@@ -11,6 +11,16 @@ body {
   background-color: $color2;
   font-family: 'Montserrat', sans-serif;
 }
+img{
+  object-fit: cover;
+}
+
+#container-1,#container-2{
+  display: none;
+}
+.info_date{
+  padding-bottom: 20px;
+}
 
 // Dispositivos Moviles
 @media (max-width: 575px){
@@ -57,11 +67,15 @@ body {
   
   .info{
     &_name{
+      text-align: center;
       font-size: 1.2em;
       color: $color1;
+      text-align: center;
     }
     
     &_date{
+          text-align: center;
+      text-align: center;
       color: $color1;
       font-size:1.2em;
     }
@@ -121,7 +135,7 @@ body {
     border-radius: 15px;
     margin: 20px auto;
     margin-bottom: 30px;
-    width: 80%;
+    width: 50%;
     display: flex;
     background-color: $color4;
   }
@@ -141,11 +155,14 @@ body {
   
   .info{
     &_name{
+      text-align: center;
       font-size: 1.5em;
       color: $color1;
+      text-align: center;
     }
     
     &_date{
+      text-align: center;
       color: $color1;
       font-size:1.5em;
     }
@@ -205,7 +222,7 @@ body {
     border-radius: 15px;
     margin: 20px auto;
     margin-bottom: 30px;
-    width: 80%;
+    width: 50%;
     display: flex;
     background-color: $color4;
   }
@@ -225,11 +242,13 @@ body {
   
   .info{
     &_name{
+      text-align: center;
       font-size: 1.5em;
       color: $color1;
     }
     
     &_date{
+      text-align: center;
       color: $color1;
       font-size:1.5em;
     }
@@ -289,7 +308,7 @@ body {
     border-radius: 15px;
     margin: 20px auto;
     margin-bottom: 30px;
-    width: 80%;
+    width: 50%;
     display: flex;
     background-color: $color4;
   }
@@ -309,11 +328,13 @@ body {
   
   .info{
     &_name{
+      text-align: center;
       font-size: 1.5em;
       color: $color1;
     }
     
     &_date{
+      text-align: center;
       color: $color1;
       font-size:1.5em;
     }
@@ -373,7 +394,7 @@ body {
     border-radius: 15px;
     margin: 20px auto;
     margin-bottom: 30px;
-    width: 80%;
+    width: 50%;
     display: flex;
     background-color: $color4;
   }
@@ -385,19 +406,22 @@ body {
     margin-right: 10px;
     &_foto{
       padding: 10px;
-      width: 55px;
-      height: 55px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
     }
   }
   
   .info{
     &_name{
+      text-align: center;
       font-size: 1.5em;
       color: $color1;
+      text-align: center;
     }
     
     &_date{
+      text-align: center;
       color: $color1;
       font-size:1.5em;
     }
